@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.bb{
+    border: 2px solid blue;
+}
+
+.gg{
+    border: 2px solid green;
+}
+
+.rr{
+    border : 2px solid red;
+}
+
+img,svg{
+    display: block;
+    max-width: 100%;
+}
+
+
+/* home page */
+.home-hero-know-btn{
+    padding: 20px 50px;
+    color: black;
+    
+width: 239px;
+height: 69px;
+background: #FFFFFF;
+box-shadow: 2px 11px 20px rgba(51, 99, 108, 0.08);
+border-radius: 10px;
+}
+
+.home-hero-robot-bg{
+    background-image: url('./images/home/home-hero-robot.png');
+    /* background-attachment:fixed; */
+    background-repeat: no-repeat;
+    background-size: contain;
+     background-position: center bottom;
+}
