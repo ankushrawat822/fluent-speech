@@ -39,11 +39,11 @@ img,svg{
 
 /* home page */
 .home-hero-know-btn{
-    padding: 20px 50px;
+ 
     color: black;
     
-width: 239px;
-height: 69px;
+/* width: 239px;
+height: 69px; */
 background: #FFFFFF;
 box-shadow: 2px 11px 20px rgba(51, 99, 108, 0.08);
 border-radius: 10px;
@@ -55,4 +55,10 @@ border-radius: 10px;
     background-repeat: no-repeat;
     background-size: contain;
      background-position: center bottom;
+}
+
+
+.home-sol-card-1{
+   background: linear-gradient(to left , #023267 80%);
+
 }
