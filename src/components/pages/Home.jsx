@@ -1,4 +1,8 @@
 import React from 'react'
+import OwlCarousel from 'react-owl-carousel';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+
 
 import mainSectionArrow from '../../images/home/main-arrow.svg'
 import homeHeroArrow from '../../images/home/home-hero-arrow-1.jpg'
@@ -11,7 +15,48 @@ import homeSolImgTest from '../../images/home/EG3.png'
 import homeRecoDate from '../../images/home/home-reco-date.png'
 import homeReco2 from '../../images/home/home-reco-2.png'
 
+
+// client img
+import homeClient3 from '../../images/home/home-client-3.svg'
+
+// client says 
+import homeQuotStart from '../../images/home/home-quote-start.svg'
+import homeQuotEnd from '../../images/home/home-quote-end.svg'
+import homeUserIcon from '../../images/home/home-user-icon.svg'
+
+const logos = [
+
+  { image: homeClient3  },
+  { image:homeClient3 },
+  { image: homeClient3 },
+  { image: homeClient3 },
+]
+
 const Home = () => {
+
+  const options = {
+    loop:true,
+    
+    center: true,
+    items: 4,
+    margin: 30,
+    autoplay: true,
+    dots: true,
+    autoplayTimeout: 8500,
+    smartSpeed: 450,
+    nav: false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:1
+            }
+        }
+};
   return (
     <>
       {/* black div bg */}
@@ -149,9 +194,49 @@ const Home = () => {
 
       </section>
 
-      <section className='rr h-screen w-screen mt-20'>
+      <section className='  mt-20 flex flex-col items-center justify-center p-3 '>
+      {/* title */}
+           <h2 className='text-[28px] md:text-[48px] font-bold my-4'>OUR PARTIAL CLIENT LIST</h2>
+           {/* hr line */}
+           <div className='line w-[85vw] md:w-[70vw] lg:w-[40vw] bg-black h-[2px] my-3 ' ></div>
 
+           <p className='text-[18px] md:text-[24px] text-center my-2 mb-10 leading-[25px] w-full md:w-[80vw] lg:w-[70vw]'>AGILE GLOBAL has assisted numerous Fortune/Global 1000 and mid-sized firms in their application development, integration, conversion, consolidation and support efforts. We are also dedicated to partnering with early stage and emerging growth enterprise software companies, working with them to bring to market the best technology solutions possible.</p>
+
+        {/* owlcarousel  */}
+        <OwlCarousel className="owl-carousel lg:w-[70vw]"  {...options}>
+         { 
+          <div className=' flex items-center justify-center gap-6 my-5 '>
+          
+           {  logos.map((item)=>( 
+              <img className='w-[350px] h-[115px]' src={item.image} alt="" />
+            ))
+           }
+           </div> 
+           }
+        </OwlCarousel>
+
+{/* what clients say about us section */}
+   <div className='flex flex-col items-center justify-center  mt-[50px]'>
+    <p className='text-[24px] md:text-[32px] font-bold'>What Clients say About us</p>
+    <p className='text-center w-[70vw] md:w-[25vw] text-[16px] leading-[20px] mb-[30px]'>Everything you need to know about offering a differentiated customer experience</p>
+    {/* quate div */}
+    <div className='  flex relative items-center justify-center py-10 md:py-2  md:w-[55vw]'>
+      <img className='absolute top-0 left-0 w-[46px] h-[52px]' src={homeQuotStart} alt="" />
+      <p className='text-[18px] text-center w-[90vw]  md:w-[50vw] p-3 md:p-5'>Agile Global Solutions, Inc (AGILE GLOBAL) founded in 2003 is a global Business and IT solutions provider headquartered in Folsom, CA (a suburb of Sacramento) servicing prestigious clients all over the world.</p>
+      <img className='absolute bottom-0 right-0 w-[46px] h-[52px]' src={homeQuotEnd} alt="" />
+     
+    </div>
+     {/* user name and image */}
+     <div className='flex flex-col items-center justify-center gap-1'>
+           <img className='w-[40px] h-[40px]' src={homeUserIcon} alt="" />
+           <p className='text-[18px] font-bold '>Jason Roy</p>
+      </div>
+   </div>
       </section>
+
+
+      {/* another section */}
+      
     </>
   )
 }

@@ -62,3 +62,13 @@ border-radius: 10px;
    background: linear-gradient(to left , #023267 80%);
 
 }
+
+
+/* footer css */
+.footer-bg{
+    background-image: url("./images/footer/footer-bg.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  
+    width: 100vw;
+}
