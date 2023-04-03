@@ -1,7 +1,6 @@
 import React from 'react'
-import OwlCarousel from 'react-owl-carousel';
-import 'owl.carousel/dist/assets/owl.carousel.css';
-import 'owl.carousel/dist/assets/owl.theme.default.css';
+import Slider from "react-slick";
+
 
 
 import mainSectionArrow from '../../images/home/main-arrow.svg'
@@ -17,7 +16,10 @@ import homeReco2 from '../../images/home/home-reco-2.png'
 
 
 // client img
+import homeClient1 from '../../images/home/home-client-1.svg'
+import homeClient2 from '../../images/home/home-client-2.svg'
 import homeClient3 from '../../images/home/home-client-3.svg'
+import homeClient4 from '../../images/home/home-client-4.svg'
 
 // client says 
 import homeQuotStart from '../../images/home/home-quote-start.svg'
@@ -26,37 +28,62 @@ import homeUserIcon from '../../images/home/home-user-icon.svg'
 
 const logos = [
 
-  { image: homeClient3  },
-  { image:homeClient3 },
+  { image: homeClient1  },
+  { image:homeClient2 },
+  { image: homeClient4 },
   { image: homeClient3 },
-  { image: homeClient3 },
+  { image: homeClient4 },
+
 ]
 
 const Home = () => {
 
-  const options = {
-    loop:true,
-    
-    center: true,
-    items: 4,
-    margin: 30,
-    autoplay: true,
+  var settings = {
     dots: true,
-    autoplayTimeout: 8500,
-    smartSpeed: 450,
-    nav: false,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:1
-            }
+    infinite: true,
+    speed: 500,
+    slidesToShow:4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true
         }
-};
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    
+    
+  
+  };
   return (
     <>
       {/* black div bg */}
@@ -202,21 +229,26 @@ const Home = () => {
 
            <p className='text-[18px] md:text-[24px] text-center my-2 mb-10 leading-[25px] w-full md:w-[80vw] lg:w-[70vw]'>AGILE GLOBAL has assisted numerous Fortune/Global 1000 and mid-sized firms in their application development, integration, conversion, consolidation and support efforts. We are also dedicated to partnering with early stage and emerging growth enterprise software companies, working with them to bring to market the best technology solutions possible.</p>
 
-        {/* owlcarousel  */}
-        <OwlCarousel className="owl-carousel lg:w-[70vw]"  {...options}>
-         { 
-          <div className=' flex items-center justify-center gap-6 my-5 '>
-          
-           {  logos.map((item)=>( 
-              <img className='w-[350px] h-[115px]' src={item.image} alt="" />
-            ))
-           }
-           </div> 
-           }
-        </OwlCarousel>
+ 
+
+
+      </section>
+
+ {/* slider  */}
+ <div className=' flex items-center justify-center my-[44px]'>
+ <Slider className='slider-outter  w-[85vw] ' {...settings}>
+     {
+      logos.map((item)=>(
+        <img className='w-[200px] h-[100px] home-client-img' src={item.image} alt='saldk' />
+      ))
+     }
+    </Slider>
+ </div>
+
+      
 
 {/* what clients say about us section */}
-   <div className='flex flex-col items-center justify-center  mt-[50px]'>
+<div className='flex flex-col items-center justify-center  mt-[50px]'>
     <p className='text-[24px] md:text-[32px] font-bold'>What Clients say About us</p>
     <p className='text-center w-[70vw] md:w-[25vw] text-[16px] leading-[20px] mb-[30px]'>Everything you need to know about offering a differentiated customer experience</p>
     {/* quate div */}
@@ -232,9 +264,6 @@ const Home = () => {
            <p className='text-[18px] font-bold '>Jason Roy</p>
       </div>
    </div>
-      </section>
-
-
       {/* another section */}
       
     </>

@@ -31,10 +31,10 @@ body{
     border : 2px solid red;
 }
 
-img,svg{
+/* img,svg{
     display: block;
     max-width: 100%;
-}
+} */
 
 
 /* home page */
@@ -63,6 +63,22 @@ border-radius: 10px;
 
 }
 
+.slider-outter{
+    
+}
+
+.slick-prev:before, .slick-next:before{
+   
+    background: white;
+    color: black !important;
+    font-size: 22px !important;
+}
+
+.home-client-img{
+    
+}
+
+
 
 /* footer css */
 .footer-bg{
@@ -71,4 +87,33 @@ border-radius: 10px;
     background-repeat: no-repeat;
   
     width: 100vw;
+}
+
+/* contact */
+.contact-bg-img{
+    background-image: url('./images/contact/hero-bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+.contact-our-headquater-bg{
+    background-image: url('./images/contact/our-headquater-bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.static-c-1{
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(23,81,152,1) 72%);
+}
+
+.contact-form-drop-shadow{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+input{
+    border : 1px solid black;
 }

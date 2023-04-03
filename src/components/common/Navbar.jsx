@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { Link } from "react-router-dom";
 import logo from '../../images/nav/logo.svg'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {VscGlobe} from 'react-icons/vsc'
@@ -20,11 +20,11 @@ const Navbar = () => {
             {/* links div */}
             <div className='hidden lg:flex'>
                 <ul className='flex items-center justify-center text-[18px] gap-14'>
-                    <li className='flex items-center justify-center'>Home  <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
-                    <li  className='flex items-center justify-center'>Solutions <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
-                    <li>Partner Model</li>
-                    <li>Careers</li>
-                    <li>Contact Us</li>
+                    <li className='flex items-center justify-center'><Link className='flex items-center justify-center' to="/"> Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></Link></li>
+                    <li  className='flex items-center justify-center'><Link className='flex items-center justify-center' > Solutions <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></Link></li>
+                    <li><Link to="/partner"> Partner Model</Link></li>
+                    <li><Link to="/career">Careers</Link></li>
+                    <li><Link to="/contact">Contact Us</Link></li>
                 </ul>
             </div>
             {/* search and language div */}
