@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import logo from '../../images/nav/logo.svg'
+import logo from '../../images/nav/logo-1.png'
 import {AiOutlineSearch} from 'react-icons/ai'
 import {VscGlobe} from 'react-icons/vsc'
 import {MdOutlineKeyboardArrowDown} from 'react-icons/md'
@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className=' flex justify-between px-4 items-center lg:justify-start py-3 lg:py-6 gap-20'>
             {/* logo div */}
             <div>
-                <img className='md:ml-4' src={logo} alt="logo" />
+                <img className='md:ml-4 w-[150px] h-[45px]' src={logo} alt="logo" />
             </div>
             {/* links div */}
             <div className='hidden lg:flex'>
