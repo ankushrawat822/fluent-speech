@@ -21,7 +21,7 @@ const Navbar = () => {
             <div className='hidden lg:flex'>
                 <ul className='flex items-center justify-center text-[18px] gap-14'>
                     <li className='flex items-center justify-center'><Link className='flex items-center justify-center' to="/"> Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></Link></li>
-                    <li  className='flex items-center justify-center'><Link className='flex items-center justify-center' > Solutions <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></Link></li>
+                    <li  className='flex items-center justify-center'><Link className='flex items-center justify-center' ><Link to='/emerging-tehcnologies'>Solutions</Link>  <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></Link></li>
                     <li><Link to="/partner"> Partner Model</Link></li>
                     <li><Link to="/career">Careers</Link></li>
                     <li><Link to="/contact">Contact Us</Link></li>
