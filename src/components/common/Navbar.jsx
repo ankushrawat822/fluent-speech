@@ -71,6 +71,8 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                        { showSolutionMenu && <div onMouseEnter={()=> setShowSolutionMenu(true)} className=' absolute top-[90px] bg-white '>
                             <ul className=' flex flex-col items-center justify-center gap-2 p-4 emerging-tech-white-div-drop-shadow text-[18px]'>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/emerging-tehcnologies'>Emerging Technologies</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
                                
                             </ul>
                         </div> }
@@ -122,7 +124,10 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                         <div>
                             <ul className='text-[19px] sm:text-[20px]'>
                             <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/emerging-tehcnologies'>Emerging Technologies</Link></li>
-                              
+
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
+                         
                             </ul>
                         </div>
                     }

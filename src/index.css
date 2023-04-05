@@ -188,3 +188,20 @@ input{
 
 box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
+
+
+/* virtual and agumented reality */
+.virtual-and-agumented-bg-img{
+    background: url('./images/solution/virtual-reality/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+/* custom app */
+.custom-app-bg-img{
+    background: url('./images/solution/custom-app/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
