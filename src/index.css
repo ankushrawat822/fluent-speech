@@ -205,3 +205,11 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     object-fit: cover;
     background-repeat: no-repeat;
 }
+
+.custom-app-box-drop-shadow{
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.transition-all-2s{
+    transition: all 1s;
+}
