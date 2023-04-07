@@ -10,6 +10,8 @@ import Career from "./components/pages/Career"
 import EmergingTechnologies from './components/pages/solution/EmergingTechnologies'
 import VirtutalAndAgumented from "./components/pages/solution/VirtutalAndAgumented"
 import CustomApplication from "./components/pages/solution/CustomApplication"
+import EnterpriseApplication from './components/pages/solution/EnterpriseApplication'
+import BusinessIntelligence from "./components/pages/solution/BusinessIntelligence"
 
 
 import Footer from './components/common/Footer'
@@ -22,13 +24,14 @@ function App() {
    <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home></Home>} />
-    
         <Route path="/contact" element={<Contact></Contact>} />
         <Route path="/partner" element={<Partner></Partner>} />
         <Route path="/career" element={<Career></Career>} />
         <Route path="/emerging-tehcnologies" element={<EmergingTechnologies></EmergingTechnologies>} />
         <Route path="/virtual-and-agumented-reality" element={<VirtutalAndAgumented></VirtutalAndAgumented>} />
         <Route path="/custom-application" element={<CustomApplication></CustomApplication>} />
+        <Route path="/enterprise-application" element={<EnterpriseApplication></EnterpriseApplication>} />
+        <Route path="/business-intelligence" element={<BusinessIntelligence></BusinessIntelligence>} />
         <Route path="*" element={<Error />} />
     </Routes>
     <Footer></Footer>

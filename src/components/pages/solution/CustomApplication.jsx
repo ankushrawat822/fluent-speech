@@ -6,6 +6,8 @@ import serviceIcon from '../../../images/solution/custom-app/service.svg'
 import twIcon from '../../../images/solution/custom-app/tw.svg'
 import instaIcon from '../../../images/solution/custom-app/insta.svg'
 import inIcon from '../../../images/solution/custom-app/in.svg'
+
+
 const CustomApplication = () => {
 
     const [showServiceImg1, setShowServiceImg1] = useState(false)

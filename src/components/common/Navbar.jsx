@@ -73,6 +73,8 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/emerging-tehcnologies'>Emerging Technologies</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li> 
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li>
                                
                             </ul>
                         </div> }
@@ -103,7 +105,7 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
            {/* mobile links   */}
          { 
             ShowMobileNavDiv && 
-            <div className='absolute top-[68px]  w-full bg-white '>
+            <div className=' absolute top-[68px]  w-full bg-white '>
                 <ul>
                     <li onClick={(prev)=>setShowHomeMenuLinks((prev)=> !prev)} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
                     {
@@ -127,6 +129,8 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
 
                             <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
                             <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li>
+                            <li  className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li>
                          
                             </ul>
                         </div>

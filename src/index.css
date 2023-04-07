@@ -213,3 +213,49 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 .transition-all-2s{
     transition: all 1s;
 }
+
+
+
+/* enterprise */
+.enterprise-app-bg-img{
+    background: url('./images/solution/enterprise-app/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.enterprise-service-front-img-tilt:hover{
+    transform: rotate(-4.01deg);
+    /* transform: rotate(3.99deg); */
+    transition: all 0.9s ease-in-out;
+}
+
+/* business intelligence  */
+
+.business-intelligence-bg-img{
+
+    background: url('./images/solution/business-int/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.business-card-img-1{
+    background-image: url('./images/solution/business-int/business-int-1.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+  /* the slides */
+  .slick-slide {
+    
+}
+
+/* media querries */
+/* @media screen and (max-width: 430px) {
+      .enterprise-service-front-img-tilt{
+        width: 320px;
+      }
+  } */
