@@ -264,6 +264,45 @@ box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     background-repeat: no-repeat;
 }
 
+/* mobile */
+.mobile-bg-img{
+    background-image: url('./images/solution/mobile/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* utility */
+.utility-bg-img{
+    background-image: url('./images/solution/utility/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.utility-back-blue-div-gradient{
+background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(23,81,155,1) 73%);
+}
+
+/* government */
+.government-bg-img{
+    background-image: url('./images/solution/government/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+/* professional consulting */
+.professional-bg-img{
+    background-image: url('./images/solution/professional/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
 /* media querries */
 /* @media screen and (max-width: 430px) {
       .enterprise-service-front-img-tilt{

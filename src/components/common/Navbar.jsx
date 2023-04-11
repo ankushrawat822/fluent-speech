@@ -75,7 +75,11 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li> 
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li> 
-                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li> 
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/mobile-business'>Mobile Business</Link></li> 
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/utility-solutions'>Utility Solutions</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/government'>Government</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/professional-consulting'>Professional Consulting</Link></li>
                                
                             </ul>
                         </div> }
@@ -133,6 +137,11 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                             <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li>
                             <li  className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li>
                             <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li> 
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/mobile-business'>Mobile Business</Link></li>
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/utility-solutions'>Utility Solutions</Link></li>
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/government'>Government</Link></li>  
+                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/professional-consulting'>Professional Consulting</Link></li>
+                            
                          
                             </ul>
                         </div>
