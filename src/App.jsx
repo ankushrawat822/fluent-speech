@@ -16,6 +16,8 @@ import MobileBusiness from "./components/pages/solution/MobileBusiness"
 import UtilitySolutions from "./components/pages/solution/UtilitySolutions"
 import Government from "./components/pages/solution/Government"
 import ProfessionalConsultingg from "./components/pages/solution/ProfessionalConsultingg"
+import StrategicOutsourcing from "./components/pages/solution/StrategicOutsourcing"
+import CoManagedServices from "./components/pages/solution/CoManagedServices"
 
 
 import Footer from './components/common/Footer'
@@ -41,6 +43,8 @@ function App() {
         <Route path="/utility-solutions" element={<UtilitySolutions></UtilitySolutions>} />
         <Route path="/government" element={<Government></Government>} />
         <Route path="/professional-consulting" element={<ProfessionalConsultingg></ProfessionalConsultingg>} />
+        <Route path="/strategic-outsourcing" element={<StrategicOutsourcing></StrategicOutsourcing>} />
+        <Route path="/co-managed-services" element={<CoManagedServices></CoManagedServices>} />
         <Route path="*" element={<Error />} />
     </Routes>
     <Footer></Footer>
