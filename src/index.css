@@ -31,6 +31,12 @@ body{
     border : 2px solid red;
 }
 
+/* navbar */
+
+.mobile-nav-drop-shadow{
+    box-shadow: rgba(0, 0, 0, 0.55) 4px 51px 56px;
+}
+
 /* img,svg{
     display: block;
     max-width: 100%;
@@ -53,8 +59,10 @@ border-radius: 10px;
     background-image: url('./images/home/home-hero-robot.png');
     /* background-attachment:fixed; */
     background-repeat: no-repeat;
-    background-size: contain;
-     background-position: center bottom;
+    background-size: cover;
+     background-position: center ;
+     /* background-size : contain
+        bg-position : center bottom */
 }
 
 
@@ -325,9 +333,25 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(23,81,155,1) 73%)
 }
 
 
+/* partner modle */
+
+.partner-recog-bg-div-1{
+    background-image: url('./images/partner/recog-img-1.jpg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.partner-recog-drop-shadow{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
 
 
-
+.partner-recog-drop-shadow:hover .partner-recog-card-inner {
+    height: 368px;
+    border-radius: 20px;
+    padding-top: 100px;
+}
 
 /* media querries */
 /* @media screen and (max-width: 430px) {

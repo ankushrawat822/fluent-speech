@@ -155,7 +155,7 @@ const BusinessIntelligence = () => {
         <p className='text-center sm:text-start leading-[32px] text-white text-[18px] sm:text-[20px] md:text-[24px] mb-6 lg:px-10 xl:px-32'>Our Business Intelligence (BI) practice helps customers reap the benefits of datawarehouses and dashboards that facilitate decision makers in making quick and crucial decisions for their organizations in this competitive market. We provide services that include:</p>
 
         {/* outer div of nos.  */}
-        <div className=' flex flex-col md:flex-row items-center justify-center gap-5'>
+        <div className=' flex flex-col md:flex-row items-start lg:items-center justify-center gap-5'>
           {/* no div  1 to 4*/}
           <div className=' flex flex-col items-start justify-start gap-5'>
             <div className='flex items-center justify-center gap-2'>
@@ -210,12 +210,12 @@ const BusinessIntelligence = () => {
 
 
       {/* OUR PRODUCT EXPERIENCE INCLUDES: */}
-      <div className='my-14'>
+      <div className='my-14 px-3'>
         <p className='text-[24px] sm:text-[32px] md:text-[36px] leading-[39px] text-center font-semibold mb-11'>OUR PRODUCT EXPERIENCE INCLUDES:</p>
         {/* li divs */}
         <div className='flex items-center justify-center flex-wrap gap-6 lg:px-28 xl:px-52'>
           {/* li 1 */}
-          <div className='rounded-[16px] bg-[#023267] gap-3 flex items-center justify-center p-3 px-5 md:w-[401px]'>
+          <div className='rounded-[16px] h-[90px] bg-[#023267] gap-3 flex items-center justify-center p-3 px-5 md:w-[401px]'>
             <img src={tick} alt="" />
             <p className='text-[22px] text-white '>TIBCO products</p>
           </div>
@@ -232,7 +232,7 @@ const BusinessIntelligence = () => {
           </div>
 
           {/* li 1 */}
-          <div className='rounded-[16px] bg-[#023267] gap-3 flex items-center justify-center p-3 px-5 md:w-[401px]'>
+          <div className='rounded-[16px] h-[90px] bg-[#023267] gap-3 flex items-center justify-center p-3 px-5 md:w-[401px]'>
             <img src={tick} alt="" />
             <p className='text-[22px] text-white '>Level8 Products</p>
           </div>

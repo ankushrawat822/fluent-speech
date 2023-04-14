@@ -19,6 +19,9 @@ import ProfessionalConsultingg from "./components/pages/solution/ProfessionalCon
 import StrategicOutsourcing from "./components/pages/solution/StrategicOutsourcing"
 import CoManagedServices from "./components/pages/solution/CoManagedServices"
 
+// home menu pages
+import Driver from "./components/pages/home/Driver"
+
 
 import Footer from './components/common/Footer'
 function App() {
@@ -45,6 +48,12 @@ function App() {
         <Route path="/professional-consulting" element={<ProfessionalConsultingg></ProfessionalConsultingg>} />
         <Route path="/strategic-outsourcing" element={<StrategicOutsourcing></StrategicOutsourcing>} />
         <Route path="/co-managed-services" element={<CoManagedServices></CoManagedServices>} />
+
+        {/* home menu  */}
+        <Route path="/our-driver" element={<Driver></Driver>} />
+
+
+
         <Route path="*" element={<Error />} />
     </Routes>
     <Footer></Footer>

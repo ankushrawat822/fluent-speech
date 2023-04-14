@@ -26,6 +26,10 @@ const [showHomeMenuLinks , setShowHomeMenuLinks] = useState(false)
 //  state for showing home menu links
 const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
 
+// state to close menu , when clicked on menu link
+const [closeMenuMobile , setCloseMenuMObile] = useState(false)
+
+
    const handleCrossIcon = ()=>{
       setMenuIcon(false)
       setShowMobileNavDiv(false)
@@ -54,7 +58,7 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                          {/* home drop down menues start */}
                        { showHomeMenu && <div onMouseEnter={()=> setShowHomeMenu(true)} className=' absolute top-[90px] bg-white '>
                             <ul className=' flex flex-col items-center justify-center gap-2 p-4 emerging-tech-white-div-drop-shadow text-[18px]'>
-                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'>Driver</li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/our-driver'>Driver</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'>Talk</li>
                                 <li className='px-2 py-1 rounded-[6px] hover:w-full hover:text-center cursor-pointer hover:bg-[#E8E8E8]'>About Us</li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'>OUr Partial Client</li>
@@ -111,14 +115,15 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
            {/* mobile links   */}
          { 
             ShowMobileNavDiv && 
-            <div className=' absolute top-[68px]  w-full bg-white '>
+            <div className='z-10 mobile-nav-drop-shadow absolute top-[68px]  w-full bg-white '>
                 <ul>
                     <li onClick={(prev)=>setShowHomeMenuLinks((prev)=> !prev)} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
                     {
                         showHomeMenuLinks && 
                         <div>
                             <ul className='text-[19px] sm:text-[20px]'>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'>Driver</li>
+                            
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/our-driver'>Driver</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'>Talk</li>
                                 <li className='px-2 py-1 rounded-[6px] w-full text-center cursor-pointer hover:bg-[#E8E8E8]'>About Us</li>
                             </ul>
@@ -131,19 +136,19 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                         showSolutionMenuLinks && 
                         <div>
                             <ul className='text-[19px] sm:text-[20px]'>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/emerging-tehcnologies'>Emerging Technologies</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/emerging-tehcnologies'>Emerging Technologies</Link></li>
 
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li>
-                            <li  className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li> 
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/mobile-business'>Mobile Business</Link></li>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/utility-solutions'>Utility Solutions</Link></li>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/government'>Government</Link></li>  
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/professional-consulting'>Professional Consulting</Link></li>
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/strategic-outsourcing'>Strategic Outsourcing</Link></li>  
-                            <li className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/co-managed-services'>Co-Managed Services</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li> 
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/mobile-business'>Mobile Business</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/utility-solutions'>Utility Solutions</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/government'>Government</Link></li>  
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/professional-consulting'>Professional Consulting</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/strategic-outsourcing'>Strategic Outsourcing</Link></li>  
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/co-managed-services'>Co-Managed Services</Link></li>
                                                     
                             </ul>
                         </div>
@@ -151,10 +156,10 @@ const [showSolutionMenuLinks , setShowSolutionMenuLinks] = useState(false)
                 </ul>
 
                 <ul>
-                    <li className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Partner Model </li> 
-                    <li className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'> Careers </li>
-                    <li className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'> <Link to='/contact'>Contact Us</Link> </li>
-                    <li className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>
+                    <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Partner Model </li> 
+                    <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'> Careers </li>
+                    <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'> <Link to='/contact'>Contact Us</Link> </li>
+                    <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>
                      {/* search and language div */}
                 <div className='flex  items-center justify-center gap-1'>
                     <AiOutlineSearch className='text-[20px] '></AiOutlineSearch>
