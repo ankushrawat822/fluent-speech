@@ -88,14 +88,14 @@ const Driver = () => {
                     <p className='text-[24px] leading-[30px] text-center md:text-start'>Since our inception there are certain Drivers that have constantly pushed our business to be a constantly evolving Solutions provider. The insatiable quest to outperform and over-deliver coupled with incorporating lessons-learnt to offer best of breed solutions with the customer’s best interest in mind, has been the recipe for success to both our clients and workforce.</p>
                 </div>
 
-                <img className='md:w-[400px] lg:w-full' src={firstImg} alt="" />
+                <img className='md:w-[300px] lg:w-[500px] xl:w-full' src={firstImg} alt="" />
             </div>
 
 
             {/* main div below hero */}
             <div className='flex flex-col md:flex-row flex-wrap  items-center justify-center lg:justify-evenly gap-10 px-3'>
                 {/* only 1 card div */}
-                <div className='w-full sm:w-[426px]'>
+                <div className='w-full sm:w-[350px] xl:w-[426px]'>
                     <img src={thirdImg} alt="" />
                     <p className='mt-[-40px] text-[24px] text-center sm:text-start leading-[29px]'>Ranked and recognized as the FASTEST growing company among Sacramento’s 100 fastest, Sacramento Business Journal – 2007, 2010, 2011, 2012, 2013 and 2016.</p>
                 </div>
@@ -104,12 +104,12 @@ const Driver = () => {
                 {/* 2 cards in a coloumn div */}
                 <div className='flex flex-col items-center justify-center '>
                     {/* card 1 */}
-                    <div className='w-full sm:w-[426px]'>
+                    <div className='w-full sm:w-[350px] xl:w-[426px]'>
                         <img src={secondImg} alt="" />
                         <p className='mt-10 text-[24px] text-center sm:text-start leading-[29px]'>Ranked and recognized as the FASTEST growing company among Sacramento’s 100 fastest, Sacramento Business Journal – 2007, 2010, 2011, 2012, 2013 and 2016.</p>
                     </div>
                     {/* card 2 */}
-                    <div className='w-full sm:w-[426px]'>
+                    <div className='w-full sm:w-[350px] xl:w-[426px]'>
                         <img src={forthImg} alt="" />
                         <p className='mt-[-40px] text-[24px] text-center sm:text-start leading-[29px]'>Ranked and recognized as the FASTEST growing company among Sacramento’s 100 fastest, Sacramento Business Journal – 2007, 2010, 2011, 2012, 2013 and 2016.</p>
                     </div>
