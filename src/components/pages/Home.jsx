@@ -1,4 +1,6 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Slider from "react-slick";
 
 
@@ -9,6 +11,12 @@ import homeHeroArrow from '../../images/home/home-hero-arrow-1.jpg'
 // solutiong img
 import homeSolImg1 from '../../images/home/home-sol-img-3-p.png'
 import homeSolImgTest from '../../images/home/EG3.png'
+
+// test imgs
+import homeCardImg1 from '../../images/home/home-card-img-1.jpg'
+import homeCardImg2 from '../../images/home/home-card-img-2.jpg'
+import homeCardImg3 from '../../images/home/home-card-img-3.jpg'
+import homeCardImg4 from '../../images/home/home-card-img-4.jpg'
 
 // recognition img
 import homeRecoDate from '../../images/home/home-reco-date.png'
@@ -37,6 +45,12 @@ const logos = [
 ]
 
 const Home = () => {
+
+  useEffect(()=>{
+    Aos.init({duration : 2000})
+  } , [])
+
+
 
   var settings = {
     dots: true,
@@ -87,7 +101,7 @@ const Home = () => {
   return (
     <>
       {/* black div bg */}
-      <main className='bg-black w-screen h-[90dvh] home-hero-robot-bg'>
+      <main data-aos="fade-up" className='  bg-black w-screen h-[90dvh] home-hero-robot-bg'>
         {/* innovation div */}
         <div className=' p-3 sm:p-10 lg:mx-20 xl:mx-40  lg:pt-14  flex flex-col text-white sm:max-w-[500px] lg:max-w-[650px] 
       md:max-w-[600px]  items-start justify-start'>
@@ -102,57 +116,62 @@ const Home = () => {
         </div>
       </main>
 
-      <section className='  px-3 md:px-10 lg:px-28'>
+      <section data-aos="fade-up"  className=' px-3 md:px-10 lg:px-28 xl:px-36'>
         {/* agile global solution 4 card div */}
-        <div className='flex flex-col items-center justify-center mt-10 md:mt-16 lg:my-24'>
+        <div  className='flex flex-col items-center justify-center mt-10 md:mt-16 lg:my-14'>
           <h2 className='text-[24px] md:text-[36px] leading-[43px] text-center'>AGILE GLOBAL SOLUTIONS, INC</h2>
-          <p className='text-center text-[18px] md:text-[24px] leading-[32px] mt-5 md:mt-10 lg:mt-14'>
+          <p className='text-center text-[18px] md:text-[24px] leading-[32px] mt-5 md:mt-10 lg:mt-14 '>
             Agile Global Solutions, Inc (AGILE GLOBAL) founded in 2003 is a global Business and IT solutions provider headquartered in Folsom, CA (a suburb of Sacramento) servicing prestigious clients all over the world.</p>
         </div>
 
         {/* four cards div */}
-        <div className='flex items-center justify-center flex-wrap gap-5 md:gap-10 mt-5 md:mt-10 '>
+        <div data-aos="fade-up" className='flex cursor-pointer items-center justify-center flex-wrap gap-5 md:gap-10 mt-5 md:mt-10 '>
           {/* card 1 */}
-          <div className=' relative rounded-[8px]   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
-            <img className='w-full h-full rounded-[8px] home-sol-card-1' src={homeSolImgTest} alt="" />
+          <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+            <img  className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg1} alt="" />
             {/* text div */}
-            <div className='mx-3 absolute bottom-0'>
-              <p className='text-[24px] mt-[30px]'>Global Best</p>
+            <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
+              <p className='text-[24px] mt-[20px]'>Global Best</p>
               <p className='text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <p className='text-[16px]'>Read more</p>
+              <p className='text-[16px] '>Read more...</p>
             </div>
 
           </div>
-          {/* card 2 */}
-          <div className=' relative rounded-[8px]   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
-            <img className='w-full h-full rounded-[8px] home-sol-card-1' src={homeSolImgTest} alt="" />
+
+           {/* card 1 */}
+          <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+            <img  className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg2} alt="" />
             {/* text div */}
-            <div className='mx-3 absolute bottom-0'>
-              <p className='text-[24px] mt-[30px]'>Global Best</p>
+            <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
+              <p className='text-[24px] mt-[20px]'>Global Best</p>
               <p className='text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <p className='text-[16px]'>Read more</p>
+              <p className='text-[16px] '>Read more...</p>
             </div>
 
           </div>
-          {/* card 3 */}
-          <div className=' relative rounded-[8px]   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
-            <img className='w-full h-full rounded-[8px] home-sol-card-1' src={homeSolImgTest} alt="" />
+
+
+           {/* card 1 */}
+          <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+            <img  className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg3} alt="" />
             {/* text div */}
-            <div className='mx-3 absolute bottom-0'>
-              <p className='text-[24px] mt-[30px]'>Global Best</p>
+            <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
+              <p className='text-[24px] mt-[20px]'>Global Best</p>
               <p className='text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <p className='text-[16px]'>Read more</p>
+              <p className='text-[16px] '>Read more...</p>
             </div>
 
           </div>
-          {/* card 4 */}
-          <div className=' relative rounded-[8px]   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
-            <img className='w-full h-full rounded-[8px] home-sol-card-1' src={homeSolImgTest} alt="" />
+
+
+            {/* card 1 */}
+          <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+            <img  className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg4} alt="" />
             {/* text div */}
-            <div className=' mx-3 absolute bottom-0'>
-              <p className='text-[24px] mt-[30px]'>Global Best</p>
+            <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
+              <p className='text-[24px] mt-[20px]'>Global Best</p>
               <p className='text-[16px]'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
-              <p className='text-[16px]'>Read more</p>
+              <p className='text-[16px] '>Read more...</p>
             </div>
 
           </div>
@@ -160,11 +179,11 @@ const Home = () => {
 
 
         {/* our recognition and awards..... */}
-        <div className='flex flex-col items-center justify-center my-20 md:my-14 lg:my-24'>
-          <p className='text-[24px] md:text-[36px] lg:text-[46px] text-center font-bold mb-10 md:mb-20'>OUR RECOGNITION & AWARDS</p>
+        <div className='flex flex-col items-center justify-center my-20 md:my-14 lg:my-20'>
+          <p className='text-[24px] md:text-[36px] lg:text-[46px] text-center font-bold mb-10 md:mb-10'>OUR RECOGNITION & AWARDS</p>
           {/* content divs starts*/}
           {/* first starts */}
-          <div className=' flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 lg:gap-20 '>
+          <div data-aos="fade-up"  className=' flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 lg:gap-20 '>
 
             <img className='md:w-[336px] lg:w-[410px] xl:w-[500px]' src={homeRecoDate} alt="" />
 
@@ -182,7 +201,7 @@ const Home = () => {
           <br />
           <br />
           {/* second starts */}
-          <div className=' flex flex-col md:flex-row-reverse items-center justify-center gap-5 md:gap-10 lg:gap-20 '>
+          <div data-aos="fade-up" className=' flex flex-col md:flex-row-reverse items-center justify-center gap-5 md:gap-10 lg:gap-20 md:my-[-50px] lg:[-100px] '>
 
             <img className='md:w-[336px] lg:w-[410px] xl:w-[500px]' src={homeReco2} alt="" />
 
@@ -199,7 +218,7 @@ const Home = () => {
           <br />
           <br />
           {/* third starts */}
-          <div className=' flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 lg:gap-20 '>
+          <div data-aos="fade-up" className=' flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10 lg:gap-20 '>
 
             <img className='md:w-[336px] lg:w-[410px] xl:w-[500px]' src={homeRecoDate} alt="" />
 
@@ -221,7 +240,7 @@ const Home = () => {
 
       </section>
 
-      <section className='  mt-20 flex flex-col items-center justify-center p-3 '>
+      <section data-aos="zoom-in" className='  mt-20 flex flex-col items-center justify-center p-3 '>
       {/* title */}
            <h2 className='text-[28px] md:text-[48px] font-bold my-4'>OUR PARTIAL CLIENT LIST</h2>
            {/* hr line */}
@@ -235,7 +254,7 @@ const Home = () => {
       </section>
 
  {/* slider  */}
- <div className=' flex items-center justify-center my-[44px]'>
+ <div data-aos="zoom-in" className=' flex items-center justify-center my-[44px]'>
  <Slider className='slider-outter  w-[85vw] ' {...settings}>
      {
       logos.map((item)=>(
@@ -248,7 +267,7 @@ const Home = () => {
       
 
 {/* what clients say about us section */}
-<div className='flex flex-col items-center justify-center  mt-[50px]'>
+<div  data-aos="fade-up" className='flex flex-col items-center justify-center  mt-[50px]'>
     <p className='text-[24px] md:text-[32px] font-bold'>What Clients say About us</p>
     <p className='text-center w-[70vw] md:w-[25vw] text-[16px] leading-[20px] mb-[30px]'>Everything you need to know about offering a differentiated customer experience</p>
     {/* quate div */}

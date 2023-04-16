@@ -1,4 +1,6 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import Slider from "react-slick";
 
 import homeClient1 from '../../../images/home/home-client-1.svg'
@@ -27,6 +29,10 @@ const logos = [
 ]
 
 const Driver = () => {
+
+    useEffect(()=>{
+        Aos.init({duration : 2000})
+      } , [])
 
 
     var settings = {
@@ -81,7 +87,7 @@ const Driver = () => {
     return (
         <>
             {/* text content div */}
-            <div className='text-[16px] sm:text-[18px] text-center md:text-start leading-[30px]  flex flex-col items-center justify-center gap-5 md:gap-10 md:flex-row my-5  py-10 px-3 md:px-6 lg:px-10 xl:px-44'>
+            <div data-aos="fade-up" className='text-[16px] sm:text-[18px] text-center md:text-start leading-[30px]  flex flex-col items-center justify-center gap-5 md:gap-10 md:flex-row my-5  py-10 px-3 md:px-6 lg:px-10 xl:px-44'>
 
                 <div className='text-start flex items-center md:items-start flex-col justify-center gap-6'>
                     <p className='text-[32px] sm:text-[40px] md:text-[48px] font-bold leading-[58px] text-center md:text-start'>OUR DRIVERS</p>
@@ -93,7 +99,7 @@ const Driver = () => {
 
 
             {/* main div below hero */}
-            <div className='flex flex-col md:flex-row flex-wrap  items-center justify-center lg:justify-evenly gap-10 px-3'>
+            <div data-aos="fade-up" className='flex flex-col md:flex-row flex-wrap  items-center justify-center lg:justify-evenly gap-10 px-3'>
                 {/* only 1 card div */}
                 <div className='w-full sm:w-[350px] xl:w-[426px]'>
                     <img src={thirdImg} alt="" />
@@ -102,14 +108,14 @@ const Driver = () => {
 
 
                 {/* 2 cards in a coloumn div */}
-                <div className='flex flex-col items-center justify-center '>
+                <div data-aos="fade-up" className='flex flex-col items-center justify-center '>
                     {/* card 1 */}
                     <div className='w-full sm:w-[350px] xl:w-[426px]'>
                         <img src={secondImg} alt="" />
                         <p className='mt-10 text-[24px] text-center sm:text-start leading-[29px]'>Ranked and recognized as the FASTEST growing company among Sacramento’s 100 fastest, Sacramento Business Journal – 2007, 2010, 2011, 2012, 2013 and 2016.</p>
                     </div>
                     {/* card 2 */}
-                    <div className='w-full sm:w-[350px] xl:w-[426px]'>
+                    <div data-aos="fade-up" className='w-full sm:w-[350px] xl:w-[426px]'>
                         <img src={forthImg} alt="" />
                         <p className='mt-[-40px] text-[24px] text-center sm:text-start leading-[29px]'>Ranked and recognized as the FASTEST growing company among Sacramento’s 100 fastest, Sacramento Business Journal – 2007, 2010, 2011, 2012, 2013 and 2016.</p>
                     </div>
@@ -117,7 +123,7 @@ const Driver = () => {
             </div>
 
 
-            <section className='  mt-20 flex flex-col items-center justify-center p-3 '>
+            <section data-aos="fade-up" className='  mt-20 flex flex-col items-center justify-center p-3 '>
                 {/* title */}
                 <h2 className='text-[28px] md:text-[48px] font-bold my-4'>OUR PARTIAL CLIENT LIST</h2>
                 {/* hr line */}
@@ -131,7 +137,7 @@ const Driver = () => {
             </section>
 
             {/* slider  */}
-            <div className=' flex items-center justify-center my-[44px]'>
+            <div data-aos="fade-up" className=' flex items-center justify-center my-[44px]'>
                 <Slider className='slider-outter  w-[85vw] ' {...settings}>
                     {
                         logos.map((item) => (

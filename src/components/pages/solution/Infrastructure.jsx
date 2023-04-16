@@ -1,12 +1,19 @@
-import React from 'react'
-
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import twIcon from '../../../images/solution/custom-app/tw.svg'
 import instaIcon from '../../../images/solution/custom-app/insta.svg'
 import inIcon from '../../../images/solution/custom-app/in.svg'
+
 const Infrastructure = () => {
+
+  useEffect(()=>{
+    Aos.init({duration : 2000})
+  } , [])
+
   return (
     <>
-      <div>
+      <div data-aos="flip-down">
         {/* custom application bg div  */}
         <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] infrastructure-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
@@ -18,11 +25,11 @@ const Infrastructure = () => {
         </div>
       </div>
       {/* blue div text */}
-      <div className='flex items-center justify-center bg-[#023267] '>
+      <div data-aos="flip-up" className='flex items-center justify-center bg-[#023267] '>
         <p className='text-[18px] sm:text-[24px] text-white text-center p-3 sm:p-5 md:p-10 lg:px-48'>With the increased emphasis on cyber and network security, this has become a critical component of our solution offering. Our subject matter experts, many of them CISSP certified, provide the following:</p>
       </div>
       {/* white bg li div */}
-      <div className=' flex flex-col gap-3 md:flex-row md:gap-5 items-center justify-center my-5 py-4 px-7 '>
+      <div data-aos="fade-up" className=' flex flex-col gap-3 md:flex-row md:gap-5 items-center justify-center my-5 py-4 px-7 '>
         <ul className=' flex flex-col items-start justify-start gap-3 lg:w-[373px]'>
           <li className='list-disc text-[18px] md:text-[24px]'>Security Audits</li>
           <li className='list-disc text-[18px] md:text-[24px]'>Business Continuity / Disaster Recovery Planning</li>
@@ -39,7 +46,7 @@ const Infrastructure = () => {
       {/* blue bg long div */}
 
 
-      <div className='my-5 bg-[#023267] p-3 py-9 flex flex-col items-center justify-center lg:flex-row gap-6'>
+      <div data-aos="fade-up" className='my-5 bg-[#023267] p-3 py-9 flex flex-col items-center justify-center lg:flex-row gap-6'>
         {/* grey card */}
         <div className='flex flex-col items-center justify-center gap-6'>
           {/* grey card 1 */}
@@ -65,7 +72,7 @@ const Infrastructure = () => {
 
 
         {/* side div our smes ... */}
-        <div className='text-white lg:w-[600px] xl:w-[646px]'>
+        <div  className='text-white lg:w-[600px] xl:w-[646px]'>
           <p className='text-center text-[24px] sm:text-[36px] font-semibold leading-[48px] '>OUR SMES SPECIALIZE IN:</p>
           <p className=' text-[18px] sm:text-[22] text-center lg:text-start leading-[29px]'>In the Security space we not only ensure the establishment and maintenance of a stable IT infrastructure, but our solution also endows the flexibility required for responding to evolving security needs, with a customized approach unique to each customer.</p>
 
@@ -138,7 +145,7 @@ const Infrastructure = () => {
 
 
       {/* see what we have.... */}
-      <div className='flex flex-col items-center justify-center mt-16'>
+      <div data-aos="zoom-in" className='flex flex-col items-center justify-center mt-16'>
         <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>
         {/* hr line */}
         <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 ' ></div>

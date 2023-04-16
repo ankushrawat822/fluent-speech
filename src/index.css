@@ -65,10 +65,27 @@ border-radius: 10px;
         bg-position : center bottom */
 }
 
+.home-sol-outter-card-1-eff{
+  
+    overflow: hidden;
+}
 
 .home-sol-card-1{
-   background: linear-gradient(to left , #023267 80%);
+    background: rgb(255,255,255);
+    background: linear-gradient(278deg, rgba(255, 255, 255, 0) 0%, rgba(4, 35, 103, 0.845) 66%);
 
+}
+
+
+.home-sol-outter-card-1-eff:hover .home-sol-card-1{
+    transition: transform .8s ease-in;
+    transform: translateX(-100%);
+
+}
+
+.home-sol-outter-card-1-eff:hover .home-card-1-image-eff{
+    transition: transform .6s ease-in-out;
+    transform: scale(1.6) rotate(20deg);
 }
 
 .slider-outter-bus{
@@ -352,6 +369,43 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(23,81,155,1) 73%)
     border-radius: 20px;
     padding-top: 100px;
 }
+
+
+/* about page */
+.about-bg-img{
+    background-image: url('./images/home-folder/about/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+.about-blanck-card-div-drop-shadow{
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+.about-our-mission-blue-bg{
+    background-image: url('./images/about/our-mission-bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.about-our-mission-know-more-btn{
+    background-image: url('./images/about/know-more-bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+.about-get-started-bg-img{
+    background-image: url('./images/about/get-started.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
 
 /* media querries */
 /* @media screen and (max-width: 430px) {

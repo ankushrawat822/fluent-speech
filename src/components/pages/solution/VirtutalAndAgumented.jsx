@@ -1,13 +1,21 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import vrLogos from '../../../images/solution/virtual-reality/vr-logos.svg'
 import serviceImg from '../../../images/solution/virtual-reality/service-img.svg'
 
 
 const VirtutalAndAgumented = () => {
+
+    useEffect(()=>{
+        Aos.init({duration : 2000})
+      } , [])
+
+
     return (
         <>
             {/* virtual and agmented reality bg div  */}
-            <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] virtual-and-agumented-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
+            <div data-aos="zoom-in" className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] virtual-and-agumented-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
                 <h1 className='text-[24px]  sm:text-[47px] md:text-[49px] xl:text-[57px] font-bold text-white text-center mt-5 mb-4'>VIRTUAL AND AUGMENTED REALITY SOLUTIONS</h1>
                 <p className='text-[16px] sm:text-[18px] md:text-[18px] xl:text-[22px] text-white text-center'>The future is here. From building APIs and 360 degree content to reducing your time to market with our VR/AR staff experienced on different SDKs and VR lenses, embrace and immerse yourself successfully in the next big thing.
@@ -16,7 +24,7 @@ const VirtutalAndAgumented = () => {
             </div>
 
             {/*  below hero section  */}
-            <div className='flex flex-col-reverse lg:flex-row gap-0 items-center justify-center lg:w-full lg:mx-0 mx-3 mt-9'>
+            <div data-aos="fade-up" className='flex flex-col-reverse lg:flex-row gap-0 items-center justify-center lg:w-full lg:mx-0 mx-3 mt-9'>
                 {/* text div */}
                 <div className='bg-[#023267] text-white text-[18px] text-start flex flex-col items-start justify-start p-4 mx-3 w-full lg:w-[70%] rounded-[10px]'>
                     <p className='text-[16px] text-start '>
@@ -32,7 +40,7 @@ const VirtutalAndAgumented = () => {
             </div>
 
             {/* 3 wide text boxes */}
-            <div className='flex flex-col items-center justify-center gap-9 mt-10'>
+            <div data-aos="fade-up" className='flex flex-col items-center justify-center gap-9 mt-10'>
                 {/* box 1 */}
                 <div className='emerging-tech-white-div-drop-shadow flex flex-col items-start justify-start gap-2 text-start p-5  sm:w-[80%] lg:w-[70%] rounded-[10px] mx-3 '>
                     <p className='text-[22px] sm:text-[24px] font-semibold'>The Internet of Things (IoT):</p>
@@ -56,7 +64,7 @@ const VirtutalAndAgumented = () => {
 
 
        {/*   more services div      */}
-        <div className='flex flex-col items-center justify-center gap-4 my-16 px-3'>
+        <div data-aos="zoom-in" className='flex flex-col items-center justify-center gap-4 my-16 px-3'>
              {/* title */}
            <h2 className='text-[28px] text-center md:text-[35px] leading-[35px] font-bold '>More Services at Your Fingertips</h2>
 

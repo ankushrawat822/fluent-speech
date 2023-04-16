@@ -21,6 +21,8 @@ import CoManagedServices from "./components/pages/solution/CoManagedServices"
 
 // home menu pages
 import Driver from "./components/pages/home/Driver"
+import Services from "./components/pages/home/Services"
+import About from "./components/pages/home/About"
 
 
 import Footer from './components/common/Footer'
@@ -51,6 +53,9 @@ function App() {
 
         {/* home menu  */}
         <Route path="/our-driver" element={<Driver></Driver>} />
+        <Route path="/services" element={<Services></Services>} />
+        <Route path="/about" element={<About></About>} />
+        
 
 
 

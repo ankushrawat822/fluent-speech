@@ -1,4 +1,6 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import serviceImg from '../../../images/solution/custom-app/services-img.svg'
 import tickIcon from '../../../images/solution/custom-app/tick.svg'
 import serviceBlueBg from '../../../images/solution/enterprise-app/service-inclued-bg.svg'
@@ -8,10 +10,15 @@ import instaIcon from '../../../images/solution/custom-app/insta.svg'
 import inIcon from '../../../images/solution/custom-app/in.svg'
 
 const EnterpriseApplication = () => {
+
+    useEffect(()=>{
+        Aos.init({duration : 2000})
+      } , [])
+
     return (
         <>
             {/* custom application bg div  */}
-            <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] enterprise-app-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
+            <div data-aos="zoom-in" className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] enterprise-app-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
                 <h1 className='text-[24px]  sm:text-[47px] md:text-[49px] xl:text-[57px] leading-[58px] xl:px-20 font-bold text-white text-center mt-5 mb-4'>ENTERPRISE APPLICATION MANAGEMENT
                 </h1>
@@ -22,7 +29,7 @@ const EnterpriseApplication = () => {
 
 
             {/* hr line */}
-            <div className='flex flex-col items-center justify-center'>
+            <div data-aos="fade-up" className='flex flex-col items-center justify-center'>
 
                 <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-12 mb-6 ' ></div>
                 <p className='text-center text-[20px] leading-[30px] px-3 md:px-20 lg:px-36 xl:px-52'>In today’s enterprise, myriad applications run in parallel, processing and presenting pertinent information to executives and staff from the various functional silos within an organization. We add value by providing functional, technical, and project management expertise for product customizations, implementations, conversions, upgrades, migrations, and production support of such applications.</p>
@@ -32,7 +39,7 @@ const EnterpriseApplication = () => {
 
 
             {/* below hero section */}
-            <div className='my-8 flex flex-col items-center justify-center'>
+            <div data-aos="fade-up"  className='my-8 flex flex-col items-center justify-center'>
                 <p className='text-[20px] font-semibold text-clip sm:text-[25px] md:text-[35px] lg:text-[40px] mb-7'>Our services include:</p>
 
                 {/* image and text div */}
@@ -62,7 +69,7 @@ const EnterpriseApplication = () => {
 
                  {/*  below service div   */}
 
-            <div className='flex items-center justify-center flex-col my-16'>
+            <div data-aos="fade-up" className='flex items-center justify-center flex-col my-16'>
                 <p className='text-[24px] sm:text-[30px] leading-[30px] text-center px-3 md:px-20 lg:px-36 xl:px-52 mb-9'>WE HAVE EXPERTS IN VARIOUS MODULES OF THE FOLLOWING BUT NOT ALL INCLUSIVE LIST OF PACKAGED ENTERPRISE APPLICATIONS:</p>
 
             {/* small blue boxes div  */}
@@ -98,7 +105,7 @@ const EnterpriseApplication = () => {
 
 
              {/* see what we have.... */}
-             <div className='flex flex-col items-center justify-center mt-16'>
+             <div data-aos="zoom-in" className='flex flex-col items-center justify-center mt-16'>
                 <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>
                  {/* hr line */}
                  <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 ' ></div>

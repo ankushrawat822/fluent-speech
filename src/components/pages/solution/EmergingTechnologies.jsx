@@ -1,13 +1,22 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import LastCardImg1 from '../../../images/solution/emerging-technologies/last-card-img-1.svg'
 import LastCardImg2 from '../../../images/solution/emerging-technologies/last-card-img-2.svg'
 import LastCardImg3 from '../../../images/solution/emerging-technologies/last-card-img-3.svg'
 
 const EmergingTechnologies = () => {
+
+
+    useEffect(()=>{
+        Aos.init({duration : 2000})
+      } , [])
+    
+
     return (
         <>
             {/* emerding technologies bg div  */}
-            <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] emerging-technologies-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
+            <div data-aos="fade-up" className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] emerging-technologies-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
                 <h1 className='text-[24px]  sm:text-[47px] md:text-[57px] font-bold text-white'>EMERGING TECHNOLOGIES</h1>
                 <p className='text-[18px] sm:text-[24px] text-white text-center'>Big ideas aren’t enough: Agile Global understands that ambitious ideas require acute skills and capabilities to make them a reality.</p>
@@ -15,12 +24,12 @@ const EmergingTechnologies = () => {
             </div>
 
             {/* we provide services that include.... */}
-            <div className='px-3 sm:px-20 md:px-44 mb-10'>
+            <div data-aos="flip-up" className='px-3 sm:px-20 md:px-44 mb-10'>
                 <p className='text-[28px] font-semibold leading-[38px] sm:leading-[58px] lg:my-9 text-center mt-5'>WE WANT TO HEAR FROM YOU</p>
             </div>
 
             {/* cards div */}
-            <div className='flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 px-3'>
+            <div data-aos="flip-up" className='flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 px-3'>
                 {/* card 1 */}
                 <div className='relative emerg-tech-card-1-front-img'>
                     {/* front div text  starts*/}
@@ -97,11 +106,11 @@ const EmergingTechnologies = () => {
             </div>
 
             {/* blue bg  div  */}
-            <div className='emerg-tech-blue-div px-3 py-14 my-10 md:px-20 lg:px-28 xl:px-36 mb-20'>
+            <div data-aos="fade-up" className='emerg-tech-blue-div px-3 py-14 my-10 md:px-20 lg:px-28 xl:px-36 mb-20'>
                 <p className='text-[20px] sm:text-[24px] text-white text-center '>OUR EMERGING TECHNOLOGIES PRACTICE HELPS CUSTOMERS REALIZE THE DREAM THAT WILL SHAPE TOMORROW’S WORLD TO STAY COMPETITIVE AND AHEAD OF THE CURVE.</p>
             </div>
             {/* 3 wide text boxes */}
-            <div className='flex flex-col items-center justify-center gap-9'>
+            <div data-aos="fade-up" className='flex flex-col items-center justify-center gap-9'>
                 {/* box 1 */}
                 <div className='emerging-tech-white-div-drop-shadow flex flex-col items-start justify-start gap-2 text-start p-5  sm:w-[80%] lg:w-[70%] rounded-[10px] mx-3 '>
                     <p className='text-[22px] sm:text-[24px] font-semibold'>The Internet of Things (IoT):</p>
@@ -109,14 +118,14 @@ const EmergingTechnologies = () => {
                 </div>
 
                 {/* box 2 */}
-                <div className='emerging-tech-white-div-drop-shadow bg-[#023267] flex flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[70%] rounded-[10px] text-white'>
+                <div data-aos="fade-up" className='emerging-tech-white-div-drop-shadow bg-[#023267] flex flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[70%] rounded-[10px] text-white'>
                     <p className='text-[22px] sm:text-[24px] font-semibold'>Artificial Intelligence/Machine Learning (AI/ML):</p>
                     <p className='text-[20px] sm:text-[20px] leading-[30px] text-start'>
                         Unlock the value of unstructured to structured data. Agile Global can help analyze and implement AI/ML functionality from Integrated Analytics, Performance Dashboards to complex AI/ML applications. </p>
                 </div>
 
                 {/* box 3 */}
-                <div className='emerging-tech-white-div-drop-shadow flex flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[70%] rounded-[10px]'>
+                <div data-aos="fade-up" className='emerging-tech-white-div-drop-shadow flex flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[70%] rounded-[10px]'>
                     <p className='text-[22px] sm:text-[24px] font-semibold'>Robotics Process Automation (RPA):</p>
                     <p className='text-[20px] sm:text-[20px] leading-[30px] text-start'>
                         More CIOs are turning to robotic process automation to eliminate tedious tasks, freeing corporate workers to focus on higher value work. But RPA requires proper design, planning and governance if it's to bolster the business, experts say.</p>
@@ -125,7 +134,7 @@ const EmergingTechnologies = () => {
 
 
             {/* Our Recognitions & Awards div */}
-            <div className='flex flex-col items-center justify-center px-3 my-10'>
+            <div data-aos="zoom-in" className='flex flex-col items-center justify-center px-3 my-10'>
                 <p className='text-[28px] sm:text-[34px] md:text-[48px] font-bold text-center my-5'>Our <span className='text-[#17519B]'>Recognitions</span> & Awards</p>
 
                 {/* cards div */}

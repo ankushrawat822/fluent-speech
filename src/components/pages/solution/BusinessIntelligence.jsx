@@ -1,4 +1,6 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { IoIosArrowForward } from 'react-icons/io'
 import Slider from "react-slick";
 
@@ -21,6 +23,13 @@ import instaIcon from '../../../images/solution/custom-app/insta.svg'
 import inIcon from '../../../images/solution/custom-app/in.svg'
 
 const BusinessIntelligence = () => {
+
+  useEffect(()=>{
+    Aos.init({duration : 2000})
+  } , [])
+
+
+
   var settings = {
     dots: true,
     infinite: false,
@@ -70,7 +79,7 @@ const BusinessIntelligence = () => {
   };
   return (
     <>
-      <div>
+      <div data-aos="fade-up" >
         {/* custom application bg div  */}
         <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] business-intelligence-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
@@ -82,7 +91,7 @@ const BusinessIntelligence = () => {
         </div>
       </div>
 
-      <div className='flex flex-col items-center justify-center gap-5 my-10'>
+      <div data-aos="zoom-in" className='flex flex-col items-center justify-center gap-5 my-10'>
         <p className='text-[36px] font-semibold text-center leading-[39px] text-ce ter'>BUSINESS INTELLIGENCE</p>
 
         <div className='flex flex-col lg:flex-row items-center justify-center gap-4 mt-9 px-3'>
@@ -94,7 +103,7 @@ const BusinessIntelligence = () => {
 
 
       {/* slider  */}
-      <div className=' flex items-center justify-center my-[44px]'>
+      <div data-aos="fade-up" className=' flex items-center justify-center my-[44px]'>
         <Slider className='slider-outter-bus w-[80vw] md:w-[85vw] xl:w-[75dvw]  ' {...settings}>
 
 
@@ -150,12 +159,12 @@ const BusinessIntelligence = () => {
       </div>
 
       {/* enterprise application div blue  */}
-      <div className='bg-[#023267] flex flex-col items-center justify-center p-3 xl:p-6 mt-16'>
+      <div data-aos="fade-up" className='bg-[#023267] flex flex-col items-center justify-center p-3 xl:p-6 mt-16'>
         <p className='text-[24px] sm:text-[28px] md:text-[36px] leading-[48px] font-semibold text-white text-center mb-6'>ENTERPRISE APPLICATION INTEGRATION</p>
         <p className='text-center sm:text-start leading-[32px] text-white text-[18px] sm:text-[20px] md:text-[24px] mb-6 lg:px-10 xl:px-32'>Our Business Intelligence (BI) practice helps customers reap the benefits of datawarehouses and dashboards that facilitate decision makers in making quick and crucial decisions for their organizations in this competitive market. We provide services that include:</p>
 
         {/* outer div of nos.  */}
-        <div className=' flex flex-col md:flex-row items-start lg:items-center justify-center gap-5'>
+        <div data-aos="zoom-in" className=' flex flex-col md:flex-row items-start lg:items-center justify-center gap-5'>
           {/* no div  1 to 4*/}
           <div className=' flex flex-col items-start justify-start gap-5'>
             <div className='flex items-center justify-center gap-2'>
@@ -210,7 +219,7 @@ const BusinessIntelligence = () => {
 
 
       {/* OUR PRODUCT EXPERIENCE INCLUDES: */}
-      <div className='my-14 px-3'>
+      <div data-aos="fade-up" className='my-14 px-3'>
         <p className='text-[24px] sm:text-[32px] md:text-[36px] leading-[39px] text-center font-semibold mb-11'>OUR PRODUCT EXPERIENCE INCLUDES:</p>
         {/* li divs */}
         <div className='flex items-center justify-center flex-wrap gap-6 lg:px-28 xl:px-52'>
@@ -240,7 +249,7 @@ const BusinessIntelligence = () => {
       </div>
 
        {/* see what we have.... */}
-       <div className='flex flex-col items-center justify-center mt-16'>
+       <div data-aos="fade-up" className='flex flex-col items-center justify-center mt-16'>
                 <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>
                  {/* hr line */}
                  <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 ' ></div>

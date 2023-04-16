@@ -1,5 +1,7 @@
 import { useRef, useLayoutEffect } from 'react'
-
+import React , {useEffect , useState} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -14,6 +16,10 @@ import officeImg1 from '../../images/contact/contact-office-1.svg'
 
 
 const Contact = () => {
+
+  useEffect(()=>{
+    Aos.init({duration : 2000})
+  } , [])
 
 
   gsap.registerPlugin(ScrollTrigger);
@@ -69,7 +75,7 @@ const Contact = () => {
   return (
     <>
       {/* hero section starts */}
-      <section>
+      <section data-aos="zoom-in">
         {/* contact bg div  */}
         <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] contact-bg-img flex items-center justify-center'>
 
@@ -78,7 +84,7 @@ const Contact = () => {
         </div>
 
         {/* we want to hear div  */}
-        <div className='px-3 sm:px-20 md:px-44 '>
+        <div data-aos="fade-up" className='px-3 sm:px-20 md:px-44 '>
           <p className='text-[28px] font-semibold leading-[38px] sm:leading-[58px] lg:my-9 text-center mt-5'>WE WANT TO HEAR FROM YOU</p>
 
           <p className='text-[18px] md:text-[20px] text-center my-3 mt-5 lg:px-54'>  Have a question for us?
@@ -98,7 +104,7 @@ const Contact = () => {
 
 
       {/* our headquater div */}
-      <div className='contact-our-headquater-bg w-screen   mt-24 md:mt-24 flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:h-[450px] '>
+      <div data-aos="fade-up" className='contact-our-headquater-bg w-screen   mt-24 md:mt-24 flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:h-[450px] '>
         {/* text content */}
         <div className=' text-white flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mt-[50px] mb-[-10px] lg:mb-[-30px] px-5'>
           <p className='text-[34px] md:text-[48px] font-bold mb-2'>Our Headquater</p>
@@ -132,7 +138,7 @@ const Contact = () => {
 
 
       {/* our inter natioal offices div sarts  */}
-      <div className='mt-16 mb-16 flex items-center justify-center'>
+      <div data-aos="fade-up" className='mt-16 mb-16 flex items-center justify-center'>
         <div className='px-3'>
           <p className='text-[34px] md:text-[48px] font-semibold mb-2 text-center'>Our International Office</p>
         </div>
@@ -140,7 +146,7 @@ const Contact = () => {
 
 
       {/* headquater div starts */}
-      <div className='flex flex-col md:flex-row md:flex-wrap items-center justify-center md:justify-evenly gap-[165px] md:gap-x-[150px] xl:gap-5'>
+      <div data-aos="fade-up" className='flex flex-col md:flex-row md:flex-wrap items-center justify-center md:justify-evenly gap-[165px] md:gap-x-[150px] xl:gap-5'>
         {/* both circle div 1 */}
         <div className=' relative'>
           {/* static circle 1 */}
@@ -200,7 +206,7 @@ const Contact = () => {
 
 
       {/* form section */}
-      <div className=' py-10 contact-form-drop-shadow flex flex-col items-center justify-center mt-32 px-3 md:px-10  sm:mx-5 md:mx-20 lg:mx-36 xl:mx-64'>
+      <div data-aos="fade-up" className=' py-10 contact-form-drop-shadow flex flex-col items-center justify-center mt-32 px-3 md:px-10  sm:mx-5 md:mx-20 lg:mx-36 xl:mx-64'>
         {/* inner div */}
         {/* headidng */}
         <p className='text-[34px] sm:text-[48px] font-bold mb-11'>Have any queries?</p>

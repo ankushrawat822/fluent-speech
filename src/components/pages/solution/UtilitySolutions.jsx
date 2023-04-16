@@ -1,4 +1,6 @@
-import React from 'react'
+import React , {useEffect} from 'react'
+import Aos from "aos";
+import "aos/dist/aos.css";
 import tickIcon from '../../../images/solution/custom-app/tick.svg'
 import utilityBlueBg from '../../../images/solution/utility/utility-blue-bg.svg'
 import utilityFrontImg from '../../../images/solution/utility/utility-front-bg.svg'
@@ -7,9 +9,14 @@ import instaIcon from '../../../images/solution/custom-app/insta.svg'
 import inIcon from '../../../images/solution/custom-app/in.svg'
 
 const UtilitySolutions = () => {
+
+  useEffect(()=>{
+    Aos.init({duration : 2000})
+  } , [])
+
   return (
     <>
-         <div>
+         <div data-aos="fade-up">
         {/* custom application bg div  */}
         <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] utility-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
@@ -21,12 +28,12 @@ const UtilitySolutions = () => {
       </div>
 
       {/* blue div */}
-      <div className=' py-6 px-3 lg:py-10 lg:px-20 xl:px-44 flex items-center justify-center flex-col bg-[#023267]   '>
+      <div data-aos="fade-up" className=' py-6 px-3 lg:py-10 lg:px-20 xl:px-44 flex items-center justify-center flex-col bg-[#023267]   '>
         <p className='text-[18px] sm:text-[24px] leading-[30px] text-white text-center sm:text-start  '>Increased regulation, higher production costs, and environmental concerns all contribute to the need for reducing costs thru the use of more advanced technology and applications. Agile Global has consistently partnered with our Utility Sector clients to make a difference. With a strong history of providing not only technical talent but SME and Executive level resources to assist with their cutting edge processes, Agile Global is a valuable partner within the energy community. Our 100% customer retention tells the story……..
 </p>
 
 {/* li ul */}
- <div className=' flex w-full '>
+ <div data-aos="fade-down" className=' flex w-full '>
      {/* white bg li div */}
      <div className=' w-full text-white flex flex-col gap-1 sm:flex-row sm:gap-5 items-start justify-center sm:items-center sm:justify-between  py-4 px-7 '>
         <ul className=' flex flex-col items-start justify-start gap-1 lg:w-[373px]'>
@@ -50,7 +57,7 @@ const UtilitySolutions = () => {
 
       {/* client include :  */}
         {/* below hero section */}
-        <div className='my-8 flex flex-col items-center justify-center'>
+        <div data-aos="zoom-in" className='my-8 flex flex-col items-center justify-center'>
                 <p className='text-[20px] font-semibold text-clip sm:text-[25px] md:text-[35px] lg:text-[40px] mb-7'>CLIENTS INCLUDE:</p>
 
                 {/* image and text div */}
@@ -78,7 +85,7 @@ const UtilitySolutions = () => {
 
 
  {/* see what we have.... */}
- <div className='flex flex-col items-center justify-center mt-16'>
+ <div data-aos="fade-up" className='flex flex-col items-center justify-center mt-16'>
                 <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>
                  {/* hr line */}
                  <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 ' ></div>

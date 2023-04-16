@@ -1,4 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect} from 'react'
+
+import Aos from "aos";
+import "aos/dist/aos.css";
 import serviceImg from '../../../images/solution/custom-app/services-img.svg'
 import tickIcon from '../../../images/solution/custom-app/tick.svg'
 import globeImg from '../../../images/solution/custom-app/globe.svg'
@@ -9,6 +12,10 @@ import inIcon from '../../../images/solution/custom-app/in.svg'
 
 
 const CustomApplication = () => {
+
+    useEffect(()=>{
+        Aos.init({duration : 2000})
+      } , [])
 
     const [showServiceImg1, setShowServiceImg1] = useState(false)
     const [showServiceImg2, setShowServiceImg2] = useState(false)
@@ -26,7 +33,7 @@ const CustomApplication = () => {
     return (
         <>
             {/* custom application bg div  */}
-            <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] custom-app-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
+            <div data-aos="zoom-in" className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] custom-app-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
                 <h1 className='text-[24px]  sm:text-[47px] md:text-[49px] xl:text-[57px] leading-[58px] xl:px-20 font-bold text-white text-center mt-5 mb-4'>CUSTOM APPLICATION MANAGEMENT
                 </h1>
@@ -36,7 +43,7 @@ const CustomApplication = () => {
             </div>
 
             {/* below hero section */}
-            <div className='my-8 flex flex-col items-center justify-center'>
+            <div data-aos="fade-up" className='my-8 flex flex-col items-center justify-center'>
                 <p className='text-[20px] font-semibold text-clip sm:text-[25px] md:text-[35px] lg:text-[40px] mb-7'>Our services include:</p>
 
                 {/* image and text div */}
@@ -67,7 +74,7 @@ const CustomApplication = () => {
             </div>
 
             {/* recognization div */}
-            <div className='flex flex-col items-center justify-center mt-10 '>
+            <div data-aos="fade-up" className='flex flex-col items-center justify-center mt-10 '>
                 <p className='text-[28px] sm:text-[34px] md:text-[48px] font-bold text-center my-5 mb-20'>Our <span className='text-[#17519B]'>Recognitions</span> & Awards</p>
 
                 {/* blue and white boxs div starts  */}
@@ -159,7 +166,7 @@ const CustomApplication = () => {
 
 
             {/* see what we have.... */}
-            <div className='flex flex-col items-center justify-center mt-16'>
+            <div data-aos="fade-up" className='flex flex-col items-center justify-center mt-16'>
                 <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>
                  {/* hr line */}
                  <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 ' ></div>
