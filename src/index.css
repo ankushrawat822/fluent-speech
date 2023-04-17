@@ -406,6 +406,20 @@ background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(23,81,155,1) 73%)
 }
 
 
+/* careers */
+.careers-bg-img{
+    background-image: url('./images/careers/bg.svg');
+    background-size: cover;
+    object-fit: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 
 /* media querries */
 /* @media screen and (max-width: 430px) {

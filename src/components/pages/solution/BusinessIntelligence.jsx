@@ -248,6 +248,8 @@ const BusinessIntelligence = () => {
         </div>
       </div>
 
+
+
        {/* see what we have.... */}
        <div data-aos="fade-up" className='flex flex-col items-center justify-center mt-16'>
                 <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>

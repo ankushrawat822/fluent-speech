@@ -24,6 +24,9 @@ import Driver from "./components/pages/home/Driver"
 import Services from "./components/pages/home/Services"
 import About from "./components/pages/home/About"
 
+// career open job
+import CareerOperJob from "./components/pages/CareerOperJob"
+
 
 import Footer from './components/common/Footer'
 function App() {
@@ -56,7 +59,8 @@ function App() {
         <Route path="/services" element={<Services></Services>} />
         <Route path="/about" element={<About></About>} />
         
-
+  {/* career open job */}
+  <Route path="/career-open-job" element={<CareerOperJob></CareerOperJob>} />
 
 
         <Route path="*" element={<Error />} />

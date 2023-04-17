@@ -1,4 +1,4 @@
-import React , {useState} from 'react'
+import React , {useState , useEffect , useRef} from 'react'
 import { Link } from "react-router-dom";
 import logo from '../../images/nav/logo-1.png'
 import { AiOutlineSearch } from 'react-icons/ai'
@@ -8,6 +8,16 @@ import { GiHamburgerMenu } from 'react-icons/gi'
 import {RxCross2} from 'react-icons/rx'
 
 const Navbar = () => {
+
+    const oneRef = useRef(null)
+  
+
+
+    useEffect(() => {
+      document.addEventListener('click' , handleOnClickedOutsideMobMenu , true)
+    }, [])
+    
+
 
     // states for drop down menus
    const [showHomeMenu , setShowHomeMenu] = useState(false)
@@ -41,12 +51,25 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
     setMenuIcon(true)
     setShowMobileNavDiv(true)
  }
+
+
+//   close menu when clicked outside
+  const handleOnClickedOutsideMobMenu = (e)=>{
+ 
+     if(!oneRef.current.contains(e.target)){
+        setMenuIcon(false)
+        setShowMobileNavDiv(false)
+        console.log("clicked outside")
+     } 
+
+
+  }
     return (
         <>
 
 
             {/* // main div starts */}
-            <div className='relative flex justify-between px-4 items-center lg:justify-start  gap-x-20'>
+            <div  className='relative flex justify-between px-4 items-center lg:justify-start  gap-x-20'>
                 {/* logo div */}
                 <div>
                   <Link to='/'> <img className='md:ml-4 w-[150px] h-[45px] my-3 lg:my-0' src={logo} alt="logo" /></Link> 
@@ -105,7 +128,7 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
 
 
                 {/* mobile responsive  */}
-                <div className='lg:hidden'>
+                <div  className='lg:hidden'>
                    {menuIcon ? ( <RxCross2 onClick={handleCrossIcon} className='text-[27px] font-bold'></RxCross2>) : <GiHamburgerMenu onClick={handleHamburgerIcon} className='text-[27px] font-bold'></GiHamburgerMenu> } 
                 </div>
             </div>
@@ -115,8 +138,8 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
            {/* mobile links   */}
          { 
             ShowMobileNavDiv && 
-            <div className='z-10 mobile-nav-drop-shadow absolute top-[68px]  w-full bg-white '>
-                <ul>
+            <div ref={oneRef}  className='z-10 mobile-nav-drop-shadow absolute top-[68px]  w-full bg-white '>
+                <ul >
                     <li onClick={(prev)=>setShowHomeMenuLinks((prev)=> !prev)} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
                     {
                         showHomeMenuLinks && 
@@ -157,7 +180,7 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
 
                 <ul>
                     <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'><Link to='/partner'>Partner Model</Link> </li> 
-                    <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'> Careers </li>
+                    <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'><Link to='/career'>Careers</Link> </li> 
                     <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'> <Link to='/contact'>Contact Us</Link> </li>
                     <li onClick={handleCrossIcon} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>
                      {/* search and language div */}
