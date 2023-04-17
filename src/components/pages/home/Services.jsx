@@ -102,11 +102,11 @@ const handleServiceSocialBtn = () =>{
          
          {/* buttons */}
           <div className='mt-12 flex items-center justify-center flex-wrap gap-3 md:gap-10'>
-            <button onClick={handleServiceTalkBtn} className={` ${TalkBtn ? 'text-center text-[18px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white px-[40px] py-[20px] rounded-[52px]' : 'text-center font-semibold  text-[18px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267] px-[40px] py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Talk </button>
+            <button onClick={handleServiceTalkBtn} className={` ${TalkBtn ? 'text-center text-[18px] w-[229px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white  py-[20px] rounded-[52px]' : 'w-[229px] text-center font-semibold  text-[18px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267]  py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Talk </button>
 
-            <button onClick={handleServiceConnectBtn} className={` ${ConnectBtn ? 'text-center text-[18px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white px-[40px] py-[20px] rounded-[52px]' : 'text-center font-semibold  text-[18px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267] px-[40px] py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Connect </button>
+            <button onClick={handleServiceConnectBtn} className={` ${ConnectBtn ? 'w-[229px] text-center text-[18px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white py-[20px] rounded-[52px]' : 'w-[229px] text-center font-semibold  text-[18px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267]  py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Connect </button>
 
-            <button  onClick={handleServiceSocialBtn} className={` ${SocialBtn ? 'text-center text-[18px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white px-[40px] py-[20px] rounded-[52px]' : 'text-center font-semibold  text-[18px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267] px-[40px] py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Social </button>
+            <button  onClick={handleServiceSocialBtn} className={` ${SocialBtn ? 'w-[229px] text-center text-[18px] font-semibold leading-[22px] bg-[#023267] border-[#114590] border-[2px] text-white  py-[20px] rounded-[52px]' : 'w-[229px] text-center font-semibold  text-[18px] leading-[22px] bg-[white] border-[#114590] border-[2px] text-[#023267]  py-[20px] rounded-[52px]' }`}>AGILE GLOBAL Social </button>
           </div>
        </div>
 
