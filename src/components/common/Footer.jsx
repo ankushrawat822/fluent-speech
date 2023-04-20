@@ -80,10 +80,10 @@ const Footer = () => {
                 </div>
 
                 {/* email */}
-                <div className='flex flex-col items-center justify-center sm:w-[290px] md:w-full md:px-10 xl:w-[449px] md:mt-6 xl:mt-0'>
+                <div className=' flex flex-col items-center justify-center sm:w-[290px] md:w-full md:px-10 xl:w-[449px] md:mt-6 xl:mt-0'>
                     <img className='w-[233px] h-[94px] sm:w-[263px] sm:h-[84px] mb-3' src={logo} alt="" />
-                    <p className='text-[16px] xl:w-[449px] mb-2 text-center xl:text-start px-4 sm:px-0 sm:text-start md:text-center xl:px-0'>All trademarks and logos or registered trademarks and logos found on this Site or mentioned herein belong to their respective owners and are solely being used for informational purposes.</p>
-                    <div className='flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0'>
+                    <p className='text-[16px] xl:w-[494px] mb-2 text-center xl:text-start px-4 sm:px-0 sm:text-start md:text-center xl:px-0'>All trademarks and logos or registered trademarks and logos found on this Site or mentioned herein belong to their respective owners and are solely being used for informational purposes.</p>
+                    <div className=' flex flex-col md:flex-row items-center justify-center gap-4 md:gap-0'>
                         <input className='rounded-[8px] md:rounded-none px-6 md:w-[325px] md:h-[47px]
                         h-[34px] w-[300px] text-[18px] bg-white' type="email" placeholder='your email' />
                         <button className='bg-black text-white text-[20px] px-[30px] md:px-[40px] py-1 md:py-2 rounded-[8px] md:rounded-none'>Subscribe</button>
