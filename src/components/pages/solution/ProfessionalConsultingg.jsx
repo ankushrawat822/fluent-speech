@@ -116,15 +116,15 @@ const ProfessionalConsultingg = () => {
                     </div>
 
                     {/* img  */}
-                    <img className='md:w-[300px] lg:w-full' src={lady} alt="" />
+                    <img className='transition  ease-in-out delay-150  hover:scale-105 md:w-[300px] lg:w-full' src={lady} alt="" />
                 </div>
             </div>
 
 
             {/* box 3 */}
             <div data-aos="fade-up" className='flex items-center justify-center mt-20'>
-            <div className='emerging-tech-white-div-drop-shadow flex flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[78%] rounded-[10px]'>
-                    <p className='text-[20px] sm:text-[20px] leading-[30px] text-center'>
+            <div className='emerging-tech-white-div-drop-shadow flex flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[78%] rounded-[10px] hover:bg-[#023267] hover:text-white transition-all-2s'>
+                    <p className='text-[20px] sm:text-[20px] leading-[30px] text-center '>
                     PROFESSIONALS WITH DECADES IN THIS INDUSTRY IN COMBINATION WITH EXTENSIVE HANDS-ON EXPERIENCE ALLOWS AGILE GLOBAL TO OFFER QUALIFIED STAFF TO AUGMENT A CLIENT’S PROJECT TEAM. WITH OUR TECHNOLOGY SAVVY BUSINESS PROFESSIONALS WE GET A GOOD UNDERSTANDING OF THE CUSTOMER’S BUSINESS AND TECHNICAL REQUIREMENTS.</p>
                 </div>
             </div>

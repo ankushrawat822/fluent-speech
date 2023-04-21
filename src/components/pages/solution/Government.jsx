@@ -42,7 +42,7 @@ const Government = () => {
             Wireless: GPRS, UMTS, GSM, CDMA, 1xRTT, 3G/4G, and LTE Network</p>
 
           {/*  imgae */}
-          <img src={ArrowImg} alt="" />
+          <img className='  transition  ease-in-out delay-150  hover:scale-125' src={ArrowImg} alt="" />
         </div>
       </div>
 

@@ -139,7 +139,7 @@ const About = () => {
             {/* four cards div */}
             <div data-aos="fade-up" className='flex cursor-pointer items-center justify-center flex-wrap gap-5 md:gap-10 mt-5 md:mt-10 '>
                 {/* card 1 */}
-                <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+                <div className='hover-drop-shadow relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
                     <img className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg1} alt="" />
                     {/* text div */}
                     <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
@@ -151,7 +151,7 @@ const About = () => {
                 </div>
 
                 {/* card 1 */}
-                <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+                <div className='hover-drop-shadow relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
                     <img className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg2} alt="" />
                     {/* text div */}
                     <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
@@ -164,7 +164,7 @@ const About = () => {
 
 
                 {/* card 1 */}
-                <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+                <div className='hover-drop-shadow relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
                     <img className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg3} alt="" />
                     {/* text div */}
                     <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
@@ -177,7 +177,7 @@ const About = () => {
 
 
                 {/* card 1 */}
-                <div className=' relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
+                <div className='hover-drop-shadow relative rounded-[8px] home-sol-outter-card-1-eff   w-[321px] h-[238px] lg:w-[261px] lg:h-[238px] text-white'>
                     <img className='w-full h-full rounded-[8px] home-card-1-image-eff' src={homeCardImg4} alt="" />
                     {/* text div */}
                     <div className='absolute rounded-[8px] px-3   home-sol-card-1 w-full h-full bottom-0 flex flex-col items-start justify-center gap-2'>
@@ -197,42 +197,42 @@ const About = () => {
                 {/* cards div */}
                 <div className='px-3 flex items-center justify-center flex-wrap sm:px-5 md:px-10 lg:px-20 xl:px-44 gap-5 md:gap-5'>
                     {/* card 1 */}
-                    <div className='flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
+                    <div className='hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
                         <img src={cardBlanckImg} alt="" />
                         <p className='text-[18px] font-semibold'>Custom Therapy Plans</p>
                         <p>Custom therapy plans built to help you get the most out of each session.</p>
                     </div>
 
                     {/* card 2 */}
-                    <div className='flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
+                    <div className='hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
                         <img src={cardBlanckImg} alt="" />
                         <p className='text-[18px] font-semibold'>Chat,Video,Phone</p>
                         <p>Communicate across all your devices - at your convenience.</p>
                     </div>
 
                     {/* card 3 */}
-                    <div className='flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
+                    <div className='hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
                         <img src={cardBlanckImg} alt="" />
                         <p className='text-[18px] font-semibold'>Personalized Match</p>
                         <p>Take our simple assessment to get matched with the perfect therapist to fit your needs.</p>
                     </div>
 
                     {/* card 4 */}
-                    <div className='flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
+                    <div className='hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
                         <img src={cardBlanckImg} alt="" />
                         <p className='text-[18px] font-semibold'>Top licensed Therapist</p>
                         <p>Custom therapy plans built to help you get the most out of each session.</p>
                     </div>
 
                     {/* card 5 */}
-                    <div className='flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
+                    <div className='hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
                         <img src={cardBlanckImg} alt="" />
                         <p className='text-[18px] font-semibold'>Client portal</p>
                         <p>Log into your portal to book appointments, check therapy updates, download worksheets, and more.</p>
                     </div>
 
                     {/* card 6 */}
-                    <div className='flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
+                    <div className='hover-drop-shadow flex rounded-[20px] p-6 about-blanck-card-div-drop-shadow sm:w-[360px] sm:h-[321px] flex-col items-start justify-center text-start gap-2'>
                         <img src={cardBlanckImg} alt="" />
                         <p className='text-[18px] font-semibold'>Security features</p>
                         <p>A fully HIPAA compliant platform to ensure complete client privacy.</p>
@@ -334,7 +334,7 @@ const About = () => {
 
             {/* blue bg div  */}
             <div data-aos="fade-up" className=' about-our-mission-blue-bg w-full py-10 lg:py-0 lg:h-[660px] xl:h-[750px] my-10 flex items-center justify-between'>
-                <img className='hidden   lg:flex w-[400px] xl:w-[600px]' src={BigCircleImg} alt="" />
+                <img className='hidden transition  ease-in-out delay-150  hover:scale-110   lg:flex w-[400px] xl:w-[600px]' src={BigCircleImg} alt="" />
                 {/* our mission text */}
                 <div className=' xl:mr-72 w-full flex items-center flex-col justify-between'>
                     <p className='font-bold text-center text-[40px] sm:text-[48px] md:text-[64px] text-white leading-[86px] mb-10'>Our Mission</p>
@@ -397,7 +397,7 @@ const About = () => {
                      <div className=' flex flex-col sm:flex-row items-center justify-center gap-9 mt-10'>
                         <p className='text-[30px] sm:text-[44px] md:text[64px] text-white  font-semibold'>Our <span className='text-[40px] sm:text-[54px] md:text-[84px] lg:text-[96px] font-bold '>8</span> Core Values</p>
 
-                        <div className='md:mt-10 about-our-mission-know-more-btn w-[152px] rounded-[60px] flex items-center justify-center  '>
+                        <div className='cursor-pointer md:mt-10 about-our-mission-know-more-btn w-[152px] rounded-[60px] flex items-center justify-center  '>
                             <p className='m-3 text-[18px] text-white font-bold flex items-center justify-center gap-3 '>Know more <ImArrowRight2></ImArrowRight2>  </p> 
                         </div>
                      </div>

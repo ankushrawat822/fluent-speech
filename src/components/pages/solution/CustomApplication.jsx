@@ -49,7 +49,11 @@ const CustomApplication = () => {
                 {/* image and text div */}
                 <div className='flex flex-col items-center justify-center gap-5 lg:flex-row px-3 lg:px-20'>
                     {/* img div */}
-                    <img className='' src={serviceImg} alt="" />
+
+                    <div className='testting-outter-card-eff rounded-[60px]'>
+                    <img className='testing-inner-card-img' src={serviceImg} alt="" />
+                    </div>
+                    
                     {/* content div */}
                     <div className='flex items-center justify-center bg-[#023267] text-white rounded-[15px] lg:w-[40%] p-4'>
                         <ul className='flex items-start flex-col justify-center gap-3'>

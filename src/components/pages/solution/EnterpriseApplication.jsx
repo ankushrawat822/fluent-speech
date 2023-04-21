@@ -45,9 +45,9 @@ const EnterpriseApplication = () => {
                 {/* image and text div */}
                 <div className='flex flex-col items-center justify-center gap-9 lg:flex-row px-3 lg:px-20'>
                     {/* img div */}
-                    <div className='relative'>
+                    <div className='enterprise-outter-card-eff rounded-[60px] relative'>
                     <img className='' src={serviceBlueBg} alt="" />
-                    <img className='enterprise-service-front-img-tilt absolute bottom-4 sm:left-8  sm:w-auto' src={serviceFrontImg} alt="" />
+                    <img className='enterprise-inner-card-img enterprise-service-front-img-tilt absolute bottom-4 sm:left-8  sm:w-auto' src={serviceFrontImg} alt="" />
                     </div>
                   
                     {/* content div */}

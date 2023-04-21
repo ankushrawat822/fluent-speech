@@ -36,7 +36,7 @@ const VirtutalAndAgumented = () => {
                     <p>Our Virtual Reality and Augmented Reality technology development teams support most major platforms including; Unity, Oculus VR, Oculus RiFT, zSpace, Unreal, VR Healthcare, 3D Graphics, Samsung Gear VR, Web VR, 3D animation, and gaming.</p>
                 </div>
                 {/* image div */}
-                <img className='lg:w-[47%]' src={vrLogos} alt="" />
+                <img className='lg:w-[47%] ' src={vrLogos} alt="" />
             </div>
 
             {/* 3 wide text boxes */}
@@ -73,56 +73,56 @@ const VirtutalAndAgumented = () => {
         {/* cards div */}
         <div className='flex items-center flex-wrap justify-center gap-7 md:gap-4 xl:px-20'>
             {/* card 1 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 2 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 3 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 4 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px] '>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 5 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 6 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 7 */}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>
             </div>
 
             {/* card 8*/}
-            <div className='flex flex-col items-start justify-start gap-2'>
+            <div className='hover-drop-shadow flex flex-col items-start justify-start gap-2 p-2 hover:rounded-[10px]'>
                 <img className='mb-3' src={serviceImg} alt="" />
                 <p className='text-[18px] font-bold leading-[27px]'>Scheduke and to-do</p>
                 <p className='text-[15px]'>Digital Organization</p>

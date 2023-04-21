@@ -107,7 +107,7 @@ const BusinessIntelligence = () => {
         <Slider className='slider-outter-bus w-[80vw] md:w-[85vw] xl:w-[75dvw]  ' {...settings}>
 
 
-          <div className='   relative business-slider-div !w-[307px] flex items-center justify-center  rounded-[13px] '>
+          <div className=' hover-drop-shadow  my-7 relative business-slider-div !w-[307px] flex items-center justify-center  rounded-[13px] '>
             <img src={sliderImg1} alt="" />
             <div className='absolute  bottom-0 left-0 right-0 mx-auto flex items-center justify-center rounded-t-lg w-[281px] h-[34px] bg-[#98989869] opacity-[100%]' >
               <p className='text-[18px] font-semibold text-white text-center opacity-[100%]'>Data Integration</p>
@@ -115,7 +115,7 @@ const BusinessIntelligence = () => {
           </div>
 
 
-          <div className='  relative !w-[307px]  flex items-center justify-center  rounded-[13px] '>
+          <div className='hover-drop-shadow  my-7  relative !w-[307px]  flex items-center justify-center  rounded-[13px] '>
             <img src={sliderImg1} alt="" />
             <div className='absolute  bottom-0 left-0 right-0 mx-auto flex items-center justify-center rounded-t-lg w-[281px] h-[34px] bg-[#98989869] opacity-[100%]' >
               <p className='text-[18px] font-semibold text-white text-center opacity-[100%]'>Data Integration</p>
@@ -123,7 +123,7 @@ const BusinessIntelligence = () => {
           </div>
 
 
-          <div className='  relative !w-[307px]  flex items-center justify-center  rounded-[13px] '>
+          <div className=' hover-drop-shadow  my-7 relative !w-[307px]  flex items-center justify-center  rounded-[13px] '>
             <img src={sliderImg1} alt="" />
             <div className='absolute  bottom-0 left-0 right-0 mx-auto flex items-center justify-center rounded-t-lg w-[281px] h-[34px] bg-[#98989869] opacity-[100%]' >
               <p className='text-[18px] font-semibold text-white text-center opacity-[100%]'>Data Integration</p>
@@ -132,7 +132,7 @@ const BusinessIntelligence = () => {
 
 
 
-          <div className='  relative !w-[307px] flex items-center justify-center  rounded-[13px] '>
+          <div className=' hover-drop-shadow  my-7 relative !w-[307px] flex items-center justify-center  rounded-[13px] '>
             <img src={sliderImg1} alt="" />
             <div className='absolute  bottom-0 left-0 right-0 mx-auto flex items-center justify-center rounded-t-lg w-[281px] h-[34px] bg-[#98989869] opacity-[100%]' >
               <p className='text-[18px] font-semibold text-white text-center opacity-[100%]'>Data Integration</p>

@@ -31,7 +31,7 @@ const EmergingTechnologies = () => {
             {/* cards div */}
             <div data-aos="flip-up" className='flex flex-col sm:flex-row flex-wrap items-center justify-center gap-6 px-3'>
                 {/* card 1 */}
-                <div className='relative emerg-tech-card-1-front-img'>
+                <div className='hover-drop-shadow relative emerg-tech-card-1-front-img'>
                     {/* front div text  starts*/}
                     <div className='absolute px-3 left-0 right-0 ml-auto mr-auto w-full flex flex-col items-center justify-center top-4  text-white '>
                         <div className='emerg-tech-card-1-white-tick-img'></div>
@@ -50,7 +50,7 @@ const EmergingTechnologies = () => {
 
 
                 {/* card 2*/}
-                <div className='relative emerg-tech-card-1-front-img'>
+                <div className='hover-drop-shadow relative emerg-tech-card-1-front-img'>
                     {/* front div text  starts*/}
                     <div className='absolute px-3 left-0 right-0 ml-auto mr-auto w-full flex flex-col items-center justify-center top-4  text-white '>
                         <div className='emerg-tech-card-1-white-tick-img'></div>
@@ -68,7 +68,7 @@ const EmergingTechnologies = () => {
                 </div>
 
                 {/* card 3 */}
-                <div className='relative emerg-tech-card-1-front-img'>
+                <div className='hover-drop-shadow relative emerg-tech-card-1-front-img'>
                     {/* front div text  starts*/}
                     <div className='absolute px-3 left-0 right-0 ml-auto mr-auto w-full flex flex-col items-center justify-center top-4  text-white '>
                         <div className='emerg-tech-card-1-white-tick-img'></div>
@@ -87,7 +87,7 @@ const EmergingTechnologies = () => {
 
 
                 {/* card 4 */}
-                <div className='relative emerg-tech-card-1-front-img'>
+                <div className='hover-drop-shadow relative emerg-tech-card-1-front-img'>
                     {/* front div text  starts*/}
                     <div className='absolute px-3 left-0 right-0 ml-auto mr-auto w-full flex flex-col items-center justify-center top-4  text-white '>
                         <div className='emerg-tech-card-1-white-tick-img'></div>
@@ -140,21 +140,21 @@ const EmergingTechnologies = () => {
                 {/* cards div */}
                 <div className='flex flex-col sm:flex-row flex-wrap items-center justify-center gap-14 lg:gap-4'>
                     {/* card 1 */}
-                    <div className=' sm:w-[387px] flex flex-col items-start justify-start gap-4'>
+                    <div className='hover-drop-shadow px-3 py-2 cursor-pointer sm:w-[387px] flex flex-col items-start justify-start gap-4'>
                         <img src={LastCardImg1} alt="" />
                         <p className='font-semibold text-[24px]'>Selfie with Earth</p>
                         <p>Lorem ipsum dolor sit amet consectetur. Tortor amet placerat sed malesuada quisque mauris est. Egestas non dictum purus.</p>
                     </div>
 
                     {/* card 2*/}
-                    <div className='sm:w-[387px] flex flex-col items-start justify-start gap-4'>
+                    <div className='hover-drop-shadow px-3 py-2 cursor-pointer sm:w-[387px] flex flex-col items-start justify-start gap-4'>
                         <img src={LastCardImg2} alt="" />
                         <p className='font-semibold text-[24px]'>Beautiful View </p>
                         <p>Lorem ipsum dolor sit amet consectetur. Tortor amet placerat sed malesuada quisque mauris est. Egestas non dictum purus.</p>
                     </div>
 
                     {/* card 3 */}
-                    <div className='sm:w-[387px] flex flex-col items-start justify-start gap-4'>
+                    <div className='hover-drop-shadow px-3 py-2 cursor-pointer sm:w-[387px] flex flex-col items-start justify-start gap-4'>
                         <img src={LastCardImg3} alt="" />
                         <p className='font-semibold text-[24px]'>Fixing Rocket with Your Hand</p>
                         <p>Lorem ipsum dolor sit amet consectetur. Tortor amet placerat sed malesuada quisque mauris est. Egestas non dictum purus.</p>

@@ -35,7 +35,8 @@ const CoManagedServices = () => {
                 <p>In this service we provide teams of resources. The project/technical lead from AGILE GLOBAL undertakes certain project coordination responsibilities such as resource management, task allocation, QA etc thus freeing the client Project Manager from day-to-day administrative activities. <br />
                     The leads are also responsible for team building, career pathing, and consultant performance measurement and evaluation activities. This cost-effective option promotes higher retention and motivation of employees ensuring project continuity.</p>
 
-                <img src={yellow} alt="" />
+
+                <img className=' transition  ease-in-out delay-150  hover:scale-110 hover-drop-shadow ' src={yellow} alt="" />
             </div>
 
 
