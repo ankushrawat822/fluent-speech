@@ -46,6 +46,27 @@ font-family: 'Raleway', sans-serif;
     box-shadow: rgba(0, 0, 0, 0.55) 4px 51px 56px;
 }
 
+ .home-nav-desk-animation-links{
+     animation: mymove 0.8s ease-in-out ;
+     transform-origin: center top;
+      /* animation-name: mymove; 
+      animation-duration: 0.7s; 
+       */
+}
+
+
+@keyframes mymove {
+    0% {
+        transform: scaleY(0%);
+   }
+  
+   100% {
+    transform: scaleY(100%);
+   }
+}
+
+
+
 /* img,svg{
     display: block;
     max-width: 100%;
