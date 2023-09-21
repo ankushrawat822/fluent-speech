@@ -76,17 +76,19 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
                 </div>
                 {/* links div */}
                 <div className='hidden lg:flex '>
-                    <ul className='flex items-center justify-center text-[18px] gap-x-14'>
-                        <li onMouseEnter={()=> setShowHomeMenu(true)} onMouseLeave={()=> setShowHomeMenu(false)} className='home-nav-desk-animation-ul flex items-center justify-center h-[93px]'><Link className='flex items-center justify-center' to="/"> Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></Link>
+                    <ul className='flex items-center justify-center  text-[18px] gap-x-14'>
+                        <li onMouseEnter={()=> setShowHomeMenu(true)} onMouseLeave={()=> setShowHomeMenu(false)} className='home-nav-desk-animation-ul flex items-center justify-center h-[93px]'><Link className='flex items-center justify-center' to="/"> Home </Link>
+                        {/* DELETED <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown> */}
+
                          {/* home drop down menues start */}
-                       { showHomeMenu && <div onMouseEnter={()=> setShowHomeMenu(true)} className='home-nav-desk-animation-links absolute z-10 top-[90px] bg-white '>
+                       {/* { showHomeMenu && <div onMouseEnter={()=> setShowHomeMenu(true)} className='home-nav-desk-animation-links absolute z-10 top-[90px] bg-white '>
                             <ul className=' flex flex-col items-center justify-center gap-2 p-4 emerging-tech-white-div-drop-shadow text-[18px]'>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/our-driver'>Driver</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/services'>Services</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/about'>About Us</Link></li>
                                
                             </ul>
-                        </div> }
+                        </div> } */}
                           {/* home drop down menues ends */}
                           </li>
 
@@ -105,10 +107,10 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/mobile-business'>Mobile Business</Link></li> 
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/utility-solutions'>Utility Solutions</Link></li>
-                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/government'>Government</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/breathing-exercise'>Breathing Exercise</Link></li>
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/professional-consulting'>Professional Consulting</Link></li> 
                                 <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/strategic-outsourcing'>Strategic Outsourcing</Link></li>
-                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/co-managed-services'>Co-Managed Services</Link></li>
+                                <li className='cursor-pointer px-2 py-1 rounded-[6px] hover:w-full hover:text-center hover:bg-[#E8E8E8]'><Link to='/articulation-exercise'>Articulation Exercise</Link></li>
                             </ul>
                         </div> }
                           {/* home drop down menues ends */}</li>
@@ -140,8 +142,8 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
             ShowMobileNavDiv && 
             <div ref={oneRef}  className='home-nav-desk-animation-links z-10 mobile-nav-drop-shadow absolute top-[68px]  w-full bg-white '>
                 <ul >
-                    <li onClick={(prev)=>setShowHomeMenuLinks((prev)=> !prev)} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Home <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
-                    {
+                    <li onClick={(prev)=>setShowHomeMenuLinks((prev)=> !prev)} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Home </li>
+                    {/* {
                         showHomeMenuLinks && 
                         <div>
                             <ul className='text-[19px] sm:text-[20px]'>
@@ -151,7 +153,7 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
                                 <li  onClick={handleCrossIcon} className='px-2 py-1 rounded-[6px] w-full text-center cursor-pointer hover:bg-[#E8E8E8]'><Link to='/about'>About Us</Link></li>
                             </ul>
                         </div>
-                    }
+                    } */}
                 </ul>
                 <ul>
                     <li onClick={(prev)=>setShowSolutionMenuLinks((prev)=> !prev)} className='flex items-center justify-center text-[22px] sm:text-[24px] p-2'>Solutions <MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></li>
@@ -162,7 +164,7 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/emerging-tehcnologies'>Emerging Technologies</Link></li>
 
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/virtual-and-agumented-reality'>Virtual & Agumented Reality</Link></li>
-                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
+                            {/* <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/custom-application'>Custom Application</Link></li>
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/enterprise-application'>Enterprise Application</Link></li>
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/business-intelligence'>Business Intelligence</Link></li>
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/infrastructure'>Infrastructure</Link></li> 
@@ -171,7 +173,7 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/government'>Government</Link></li>  
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/professional-consulting'>Professional Consulting</Link></li>
                             <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/strategic-outsourcing'>Strategic Outsourcing</Link></li>  
-                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/co-managed-services'>Co-Managed Services</Link></li>
+                            <li onClick={handleCrossIcon} className='cursor-pointer px-2 py-1 rounded-[6px] w-full text-center hover:bg-[#E8E8E8]'><Link to='/co-managed-services'>Co-Managed Services</Link></li> */}
                                                     
                             </ul>
                         </div>

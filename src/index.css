@@ -40,6 +40,11 @@ font-family: 'Raleway', sans-serif;
     border : 2px solid red;
 }
 
+
+.speech-to-text-drop-shadow{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+
 /* navbar */
 
 .mobile-nav-drop-shadow{

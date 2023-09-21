@@ -14,10 +14,13 @@ import BusinessIntelligence from "./components/pages/solution/BusinessIntelligen
 import Infrastructure from "./components/pages/solution/Infrastructure"
 import MobileBusiness from "./components/pages/solution/MobileBusiness"
 import UtilitySolutions from "./components/pages/solution/UtilitySolutions"
-import Government from "./components/pages/solution/Government"
+import Breathing from "./components/pages/solution/Breathing"
 import ProfessionalConsultingg from "./components/pages/solution/ProfessionalConsultingg"
 import StrategicOutsourcing from "./components/pages/solution/StrategicOutsourcing"
 import CoManagedServices from "./components/pages/solution/CoManagedServices"
+
+// fluent speech
+import Articulation from "./components/pages/solution/Articulation"
 
 // home menu pages
 import Driver from "./components/pages/home/Driver"
@@ -49,10 +52,10 @@ function App() {
         <Route path="/infrastructure" element={<Infrastructure></Infrastructure>} />
         <Route path="/mobile-business" element={<MobileBusiness></MobileBusiness>} />
         <Route path="/utility-solutions" element={<UtilitySolutions></UtilitySolutions>} />
-        <Route path="/government" element={<Government></Government>} />
+        <Route path="/breathing-exercise" element={<Breathing></Breathing>} />
         <Route path="/professional-consulting" element={<ProfessionalConsultingg></ProfessionalConsultingg>} />
         <Route path="/strategic-outsourcing" element={<StrategicOutsourcing></StrategicOutsourcing>} />
-        <Route path="/co-managed-services" element={<CoManagedServices></CoManagedServices>} />
+        <Route path="/articulation-exercise" element={<Articulation></Articulation>} />
 
         {/* home menu  */}
         <Route path="/our-driver" element={<Driver></Driver>} />
