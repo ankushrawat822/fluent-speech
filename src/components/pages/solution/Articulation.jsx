@@ -22,7 +22,7 @@ const Articulation = () => {
     const [startArticulation, setStartArticulation] = useState("false")
 
 
-    const [nextImg, setNextImg] = useState(0)
+    
 
     
     // reseting speech to text and ai response
@@ -71,10 +71,13 @@ const Articulation = () => {
     }
 
     // think timmer
-    useEffect(() => {    
-           const intervalId = setInterval(() => {
+    useEffect(() => {  
+       
+      
+           const  intervalId = setInterval(() => {
                 setThinkTimer(prev => prev - 1);
             }, 1000);
+        
 
             // Clean up the interval when the component unmounts or when timer2 reaches 0
             return () => {clearInterval(intervalId) 
@@ -104,7 +107,7 @@ const Articulation = () => {
 
 
     const handleNextImage = () => {
-        setNextImg(prev => prev + 1)
+      
         setThinkTimer(40)
         setRandomImageNO(Math.floor(Math.random() * (image.length - 0 + 1) + 0))
         setRandomQueNO(Math.floor(Math.random() * ( (question.length - 1) - 0 + 1) + 0))
@@ -122,7 +125,7 @@ const Articulation = () => {
         <>
         
 
-{ startArticulation === "false" ? <div onClick={()=>setStartArticulation("true")} className='cursor-pointer flex items-center justify-center mt-12 '><div className='flex items-center justify-center bg-blue-400 h-[40vh] w-[50vw] rounded-[12px]'>
+{ startArticulation === "false" ? <div onClick={()=>{setStartArticulation("true");}} className='cursor-pointer flex items-center justify-center mt-12 '><div className='flex items-center justify-center bg-blue-400 h-[40vh] w-[50vw] rounded-[12px]'>
     <button className='font-bold text-[23px] text-white' >Click to Start Articulation Exercise</button>
  </div></div> : null}
 

@@ -1,6 +1,6 @@
 import React , {useState , useEffect , useRef} from 'react'
 import { Link } from "react-router-dom";
-import logo from '../../images/nav/logo-1.png'
+import logo from '../../images/nav/logo-3.png'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { VscGlobe } from 'react-icons/vsc'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
@@ -72,7 +72,7 @@ const [closeMenuMobile , setCloseMenuMObile] = useState(false)
             <div  className='relative flex justify-between px-4 items-center lg:justify-start  gap-x-20'>
                 {/* logo div */}
                 <div>
-                  <Link to='/'> <img className='md:ml-4 w-[150px] h-[45px] my-3 lg:my-0' src={logo} alt="logo" /></Link> 
+                  <Link to='/'> <img className='md:ml-4 w-[110px] h-[55px] my-3 lg:my-0' src={logo} alt="logo" /></Link> 
                 </div>
                 {/* links div */}
                 <div className='hidden lg:flex '>
