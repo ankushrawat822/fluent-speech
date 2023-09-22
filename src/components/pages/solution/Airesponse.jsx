@@ -20,7 +20,7 @@ const Airesponse = ({userInputText}) => {
         const response = await axios.post(
             "https://api.openai.com/v1/completions",
             {
-                prompt: `read the text : "${userInputText}" . NOW analyze it and answer few question ONLY IN  paragraph and NOT IN bullet points and try to keep the answer in ONLY ONE paragraph and SHORT . is the text fluent , if no then why not and how can the same thing be said in better way. NOTE that the text I will provide you won't have any context and background and IT'S okay to be that. You just paraphrae the text in better way and DON'T answer that I should start by hello , how are you.`,
+                prompt: `read the text : "${userInputText}" . NOW analyze it and answer few question ONLY IN  paragraph and NOT IN bullet points and try to keep the answer in ONLY ONE paragraph and SHORT . is the text fluent and well articulated ?, if no then why not and how can the same thing be said in better way. NOTE that the text I will provide you won't have any context and background and IT'S okay to be that. You just paraphrae the text in better way. your job is to help me  improve my communication and articulation by analyzing the text.`,
 
                 model: 'text-davinci-003',
                 temperature: 0,
