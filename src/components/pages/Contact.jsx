@@ -103,105 +103,14 @@ const Contact = () => {
 
 
 
-      {/* our headquater div */}
-      <div data-aos="fade-up" className='contact-our-headquater-bg w-screen   mt-24 md:mt-24 flex flex-col-reverse items-center justify-center md:flex-row md:items-center md:justify-evenly md:h-[450px] '>
-        {/* text content */}
-        <div className=' text-white flex flex-col items-center justify-center md:items-start md:justify-start gap-1 mt-[50px] mb-[-10px] lg:mb-[-30px] px-5'>
-          <p className='text-[34px] md:text-[48px] font-bold mb-2'>Our Headquater</p>
-          <p className='text-[24px] text-center md:text-start md:w-[317px] lg:w-[327px] xl:w-full'>California Office
-            <br />
-            193 Blue Ravine Road, Suite 160, Folsom, CA 95630</p>
-          <br />
-          <p className='text-[24px]'>
-            (916) 655-7745 [Office]
-            <br />
-            (916) 848-3659 [Fax]</p>
-          <br />
-          <p className='text-[24px] mb-3'><a className='underline' href="mailto:info@agileglobal.com">info@agileglobal.com</a></p>
-          {/* social imgs */}
-          <div className='flex items-center justify-center gap-4'>
-            <img src={fb} alt="" />
-            <img src={linkedin} alt="" />
-            <img src={ig} alt="" />
-            <img src={tw} alt="" />
-          </div>
-        </div>
-        {/* img div */}
-        <div>
-          <img className='h-[300px] w-[300px] sm:h-[450px] sm:w-[450px] md:h-[500px] md:w-[500px] mt-[-50px] md:mt-[80px]' src={ourHeadquater} alt="" />
-        </div>
-      </div>
+     
 
 
 
 
 
 
-      {/* our inter natioal offices div sarts  */}
-      <div data-aos="fade-up" className='mt-16 mb-16 flex items-center justify-center'>
-        <div className='px-3'>
-          <p className='text-[34px] md:text-[48px] font-semibold mb-2 text-center'>Our International Office</p>
-        </div>
-      </div>
-
-
-      {/* headquater div starts */}
-      <div data-aos="fade-up" className='flex flex-col md:flex-row md:flex-wrap items-center justify-center md:justify-evenly gap-[165px] md:gap-x-[150px] xl:gap-5'>
-        {/* both circle div 1 */}
-        <div className=' relative'>
-          {/* static circle 1 */}
-          <div className='static-c-1 w-[354px] h-[354px] rounded-full flex items-center justify-center '>
-            <div className='  w-[346px] h-[346px] rounded-full  bg-white flex flex-col items-center pt-[50px]'>
-              <p className='text-[24px] leading-[32px] my-2'>California</p>
-              <p className='text-[16px]'>(916) 655-7745 [Work]</p>
-              <p className='text-[16px]'>(916) 848-3659 [Fax]</p>
-            </div>
-          </div>
-          {/* dynamic circle 1 */}
-          <span id='test' ></span>
-          <div ref={firstCircle} className='dynamic-c-1 absolute bottom-[-200px]'>
-            <img src={officeImg1} alt="" />
-          </div>
-        </div>
-
-        {/* both circle div 2 */}
-        <div className=' relative'>
-          {/* static circle 2 */}
-          <div className='static-c-1 w-[354px] h-[354px] rounded-full flex items-center justify-center '>
-            <div className='  w-[346px] h-[346px] rounded-full  bg-white flex flex-col items-center pt-[50px]'>
-              <p className='text-[24px] leading-[32px] my-2'>California</p>
-              <p className='text-[16px]'>(916) 655-7745 [Work]</p>
-              <p className='text-[16px]'>(916) 848-3659 [Fax]</p>
-            </div>
-          </div>
-          {/* dynamic circle 2 */}
-          <span id='test2'></span>
-          <div ref={secondCircle} className='dynamic-c-1 absolute bottom-[-200px]'>
-            <img src={officeImg1} alt="" />
-          </div>
-        </div>
-
-
-
-        {/* both circle div 3*/}
-        <div className=' relative'>
-          {/* static circle 3 */}
-          <div className='static-c-1 w-[354px] h-[354px] rounded-full flex items-center justify-center '>
-            <div className='  w-[346px] h-[346px] rounded-full  bg-white flex flex-col items-center pt-[50px]'>
-              <p className='text-[24px] leading-[32px] my-2'>California</p>
-              <p className='text-[16px]'>(916) 655-7745 [Work]</p>
-              <p className='text-[16px]'>(916) 848-3659 [Fax]</p>
-            </div>
-          </div>
-          {/* dynamic circle 3 */}
-          <span id='test3'></span>
-          <div ref={thirdCircle} className='dynamic-c-1 absolute bottom-[-200px]'>
-            <img src={officeImg1} alt="" />
-          </div>
-        </div>
-      </div>
-
-
+    
 
 
 

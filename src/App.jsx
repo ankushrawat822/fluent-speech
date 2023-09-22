@@ -4,31 +4,16 @@ import {Router , Route , Routes} from 'react-router-dom'
 import Navbar from "./components/common/Navbar"
 import Home from './components/pages/Home'
 import Contact from "./components/pages/Contact"
-import Partner from "./components/pages/Partner"
-import Career from "./components/pages/Career"
-import EmergingTechnologies from './components/pages/solution/EmergingTechnologies'
-import VirtutalAndAgumented from "./components/pages/solution/VirtutalAndAgumented"
-import CustomApplication from "./components/pages/solution/CustomApplication"
-import EnterpriseApplication from './components/pages/solution/EnterpriseApplication'
-import BusinessIntelligence from "./components/pages/solution/BusinessIntelligence"
-import Infrastructure from "./components/pages/solution/Infrastructure"
-import MobileBusiness from "./components/pages/solution/MobileBusiness"
-import UtilitySolutions from "./components/pages/solution/UtilitySolutions"
+
+
+import RegularMeet from "./components/pages/solution/RegularMeet"
+
+import TongueTwister from "./components/pages/solution/TongueTwister"
 import Breathing from "./components/pages/solution/Breathing"
-import ProfessionalConsultingg from "./components/pages/solution/ProfessionalConsultingg"
-import StrategicOutsourcing from "./components/pages/solution/StrategicOutsourcing"
-import CoManagedServices from "./components/pages/solution/CoManagedServices"
 
 // fluent speech
 import Articulation from "./components/pages/solution/Articulation"
 
-// home menu pages
-import Driver from "./components/pages/home/Driver"
-import Services from "./components/pages/home/Services"
-import About from "./components/pages/home/About"
-
-// career open job
-import CareerOperJob from "./components/pages/CareerOperJob"
 
 
 import Footer from './components/common/Footer'
@@ -42,28 +27,14 @@ function App() {
       <Routes>
         <Route path="/" element={<Home></Home>} />
         <Route path="/contact" element={<Contact></Contact>} />
-        <Route path="/partner" element={<Partner></Partner>} />
-        <Route path="/career" element={<Career></Career>} />
-        <Route path="/emerging-tehcnologies" element={<EmergingTechnologies></EmergingTechnologies>} />
-        <Route path="/virtual-and-agumented-reality" element={<VirtutalAndAgumented></VirtutalAndAgumented>} />
-        <Route path="/custom-application" element={<CustomApplication></CustomApplication>} />
-        <Route path="/enterprise-application" element={<EnterpriseApplication></EnterpriseApplication>} />
-        <Route path="/business-intelligence" element={<BusinessIntelligence></BusinessIntelligence>} />
-        <Route path="/infrastructure" element={<Infrastructure></Infrastructure>} />
-        <Route path="/mobile-business" element={<MobileBusiness></MobileBusiness>} />
-        <Route path="/utility-solutions" element={<UtilitySolutions></UtilitySolutions>} />
-        <Route path="/breathing-exercise" element={<Breathing></Breathing>} />
-        <Route path="/professional-consulting" element={<ProfessionalConsultingg></ProfessionalConsultingg>} />
-        <Route path="/strategic-outsourcing" element={<StrategicOutsourcing></StrategicOutsourcing>} />
-        <Route path="/articulation-exercise" element={<Articulation></Articulation>} />
-
-        {/* home menu  */}
-        <Route path="/our-driver" element={<Driver></Driver>} />
-        <Route path="/services" element={<Services></Services>} />
-        <Route path="/about" element={<About></About>} />
+       
         
-  {/* career open job */}
-  <Route path="/career-open-job" element={<CareerOperJob></CareerOperJob>} />
+        <Route path="/regular-meet" element={<RegularMeet></RegularMeet>} />
+        
+        <Route path="/tongue-twister" element={<TongueTwister></TongueTwister>} />
+        <Route path="/breathing-exercise" element={<Breathing></Breathing>} />
+       
+        <Route path="/articulation-exercise" element={<Articulation></Articulation>} />
 
 
         <Route path="*" element={<Error />} />

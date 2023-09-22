@@ -18,7 +18,13 @@ const Breathing = () => {
 
   const readingText = ['Imagination is more important than knowledge. For knowledge is limited, whereas imagination embraces the entire world, stimulating progress, giving birth to evolution.' , 
   "The most beautiful thing we can experience is the mysterious. It is the source of all true art and science. He to whom the emotion is a stranger, who can no longer pause to wonder and stand wrapped in awe, is as good as dead; his eyes are closed. The insight into the mystery of life, coupled though it be with fear, has also given rise to religion. To know what is impenetrable to us really exists, manifesting itself as the highest wisdom and the most radiant beauty, which our dull faculties can comprehend only in their most primitive forms—this knowledge, this feeling, is at the center of true religiousness. In this sense, and in this sense only, I belong to the ranks of devoutly religious men." , 
-  "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel. You may not control all the events that happen to you, but you can decide not to be reduced by them. You alone are enough; you have nothing to prove to anybody. If you don't like something, change it. If you can't change it, change your attitude. Try to be a rainbow in someone's cloud. Nothing will work unless you do. You are the sum total of everything you've ever seen, heard, eaten, smelled, been told, forgot—it's all there. You are the sum of your experiences. You can't change the past, but you can change the way you feel about it. Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently. You can't really know where you are going until you know where you have been."
+  "I've learned that people will forget what you said, people will forget what you did, but people will never forget how you made them feel. You may not control all the events that happen to you, but you can decide not to be reduced by them. You alone are enough; you have nothing to prove to anybody. If you don't like something, change it. If you can't change it, change your attitude. Try to be a rainbow in someone's cloud. Nothing will work unless you do. You are the sum total of everything you've ever seen, heard, eaten, smelled, been told, forgot—it's all there. You are the sum of your experiences. You can't change the past, but you can change the way you feel about it. Courage is the most important of all the virtues because without courage, you can't practice any other virtue consistently. You can't really know where you are going until you know where you have been." ,
+  "You must be the change you wish to see in the world. In a gentle way, you can shake the world. An eye for an eye only ends up making the whole world blind. The best way to find yourself is to lose yourself in the service of others.",
+  "It always seems impossible until it's done. Education is the most powerful weapon which you can use to change the world. I am fundamentally an optimist. Whether that comes from nature or nurture, I cannot say. Part of being optimistic is keeping one's head pointed toward the sun, one's feet moving forward." ,
+  "Twenty years from now, you will be more disappointed by the things you didn't do than by the ones you did do. Sail away from the safe harbor. Explore. Dream. Discover."
+
+
+
 
  ]
 
@@ -29,23 +35,25 @@ const Breathing = () => {
         {/* custom application bg div  */}
         <div className='w-full h-[50dvh] md:h-[43dvh] xl:h-[74dvh] government-bg-img flex flex-col items-center justify-center px-3 lg:px-40'>
 
-          <h1 className='text-[24px]  sm:text-[47px] md:text-[49px] xl:text-[57px] leading-[58px] xl:px-20 font-bold text-white text-center mt-5 mb-4 '>GOVERNMENT
+          <h1 className='text-[24px]  sm:text-[47px] md:text-[49px] xl:text-[57px] leading-[58px] xl:px-20 font-bold text-white text-center mt-5 mb-4 '>Breathing Exercise
           </h1>
-          <p className='text-[16px] sm:text-[18px] md:text-[18px] xl:text-[22px] text-white text-center'>Agile Global has worked with government and quasi-government agencies for over a decade. The customers range from State and Federal to County and local government agencies.</p>
+          <p className='text-[16px] sm:text-[18px] md:text-[18px] xl:text-[22px] text-white text-center'>Discover the transformative power of controlled breathing. Our carefully designed breathing exercises will enhance your speech clarity and boost confidence.</p>
 
         </div>
       </div>
 
       {/* breathing starts */}
 
+   {/* blue div */}
+      {/* box 2 */}
+      <div className='flex items-center justify-center mt-14'>
+        <div className='emerging-tech-white-div-drop-shadow bg-[#023267] flex w-full flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[78%] rounded-[10px] text-white'>
+          <p className='text-[22px] sm:text-[23px] text-center sm:text-start '>This exercise enhances speech fluency by promoting controlled breathing, aiding in clear and confident articulation. To perform this exercise - Engage with the animation by synchronizing your breath with the expanding and shrinking circle. Inhale deeply during expansion and speak as the circle shrinks. This rhythmic practice fosters breath control and enhances your speech clarity.</p>
 
+        </div>
+      </div>
 
-      {/* <div className='my-44 flex items-center justify-center rounded-full'>
-         <div className='relative rounded-full'>
-            <p className='anim-circle'>diaphragmatic animation</p>
-         </div>
-     
-      </div> */}
+    
 
 
        {/* breathing starts */}
@@ -86,19 +94,12 @@ const Breathing = () => {
         </div>
       </div>
 
-      {/* blue div */}
-      {/* box 2 */}
-      <div className='flex items-center justify-center'>
-        <div className='emerging-tech-white-div-drop-shadow bg-[#023267] flex w-full flex-col items-start justify-star gap-2 text-start p-5 mx-3 sm:w-[80%] lg:w-[78%] rounded-[10px] text-white'>
-          <p className='text-[22px] sm:text-[23px] text-center sm:text-start '>Agile Global has vast experience developing Smartphone applications on various devices and operating systems. You will gain a competitive advantage by leveraging our technology expertise, solutions development and testing experience in mobile phones, SmartPhones, PDA’s and other handheld devices, and reduce time to market for your products.</p>
-
-        </div>
-      </div>
+      
 
 
       {/* see what we have.... */}
       <div data-aos="zoom-in" className='flex flex-col items-center justify-center mt-16'>
-        <p className='text-[24px] font-semibold text-center'>See what we have been recently</p>
+        <p className='text-[24px] font-semibold text-center'>Follow us on</p>
         {/* hr line */}
         <div className='line w-[85vw] md:w-[70vw] lg:w-[70vw] bg-black h-[2px] mt-3 mb-6 ' ></div>
 
